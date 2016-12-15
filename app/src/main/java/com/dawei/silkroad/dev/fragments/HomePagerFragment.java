@@ -72,7 +72,6 @@ public class HomePagerFragment extends Fragment {
                     }
                 }, list)
                 .setPageIndicator(new int[]{R.drawable.point_2, R.drawable.point_1})
-                //设置指示器的方向
                 .setPageIndicatorAlign(ConvenientBanner.PageIndicatorAlign.ALIGN_PARENT_RIGHT).startTurning(5000).
                 setOnItemClickListener(new OnItemClickListener() {
                     @Override

@@ -26,8 +26,6 @@ public class HomeAdapter extends RecyclerView.Adapter {
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
-        Log.e("-----", viewType + "");
         if (viewType == 1) {
             return new ShopHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_silk, parent, false));
         } else if (viewType == 2) {

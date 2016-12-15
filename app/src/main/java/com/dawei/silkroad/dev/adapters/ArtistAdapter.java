@@ -2,6 +2,7 @@ package com.dawei.silkroad.dev.adapters;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.LinearLayout;
 
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
+import com.dawei.silkroad.dev.AddressManagerActivity;
 
 import java.util.List;
 
@@ -29,9 +31,15 @@ public class ArtistAdapter extends RecyclerView.Adapter<ArtistAdapter.MyHolder> 
 
     @Override
     public void onBindViewHolder(MyHolder holder, int position) {
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams((BaseActivity.screenWidth / 3)-30, BaseActivity.screenWidth / 3-30);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams((BaseActivity.screenWidth / 3) - 30, BaseActivity.screenWidth / 3 - 30);
         holder.img_header.setLayoutParams(params);
         holder.img_header.setImageResource(R.mipmap.welcome);
+        holder.img_header.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                context.startActivity(new Intent(context, AddressManagerActivity.class));
+            }
+        });
     }
 
     @Override
