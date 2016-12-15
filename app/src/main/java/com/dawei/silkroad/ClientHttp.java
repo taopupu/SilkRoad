@@ -13,6 +13,10 @@ public class ClientHttp {
     public static final MediaType JSON
             = MediaType.parse("application/json; charset=utf-8");
 
+    /**
+     *
+     * @param str
+     */
     public static void getRequest(String str) {
         OkHttpUtils.get().url(str)
                 .build().execute(new StringCallback() {
