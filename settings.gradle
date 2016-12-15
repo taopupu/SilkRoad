@@ -1,0 +1,2 @@
+include ':app', ':recyclerview'
+project(':recyclerview').projectDir = new File('xrecyclerview')

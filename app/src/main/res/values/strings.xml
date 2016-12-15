@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">SilkRoad</string>
+    <string name="logic_title">登录</string>
+    <string name="logic_phone">请输入手机号</string>
+    <string name="logic_pwd">请输入密码</string>
+    <string name="forget_pwd">忘记密码?</string>
+    <string name="register">注册</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="sure">确定</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="valide">验证码</string>
+    <string name="send">点击发送</string>
+    <string name="setting_pwd">设置密码</string>
+    <string name="reconfirm">再次确认密码</string>
+    <string name="phone">手机号</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="input_pwd">请输入密码 </string>
+    <string name="more_input_pwd">再次输入密码 </string>
+    <string name="artist">艺术家资料</string>
+    <string name="next">下一步</string>
+    <string name="arts">美术师</string>
+    <string name="technology">工艺师</string>
+    <string name="designer">设计师</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="store">店铺资料</string>
+    <string name="store_catalog">合作店铺目录</string>
+    <string name="artist_catalog">合作艺术家目录</string>
+    <string-array name="sp_native_place">
+        <item>北京</item>
+        <item>陕西</item>
+        <item>河南</item>
+        <item>广州</item>
+        <item>四川</item>
+        <item>湖南</item>
+        <item>黑龙江</item>
+        <item>宁夏</item>
+        <item>福建</item>
+    </string-array>
+
+
+</resources>
