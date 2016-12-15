@@ -29,7 +29,6 @@ import java.util.List;
 public class HomePagerActivity extends BaseActivity {
     ConvenientBanner convenientBanner;
     List<Integer> list = new ArrayList<>();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
