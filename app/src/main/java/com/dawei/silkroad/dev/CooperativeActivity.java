@@ -57,6 +57,11 @@ public class CooperativeActivity extends BaseActivity {
             return 10;
         }
 
+        @Override
+        public int getItemViewType(int position) {
+            return super.getItemViewType(position);
+        }
+
         public class MyHolder extends RecyclerView.ViewHolder {
             ImageView img_head;
             TextView tv_name, tv_type, tv_place, tv_way;

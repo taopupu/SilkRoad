@@ -1,4 +1,4 @@
-package com.dawei.silkroad;
+package com.dawei.silkroad.util;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -7,6 +7,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
+
+import com.dawei.silkroad.R;
 
 public class LoadProgress extends Dialog{
     private static LoadProgress LoadProgress = null;

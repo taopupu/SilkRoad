@@ -1,30 +1,24 @@
 package com.dawei.silkroad.base;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.ColorInt;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-import com.dawei.silkroad.LoadProgress;
+import com.dawei.silkroad.util.LoadProgress;
 import com.dawei.silkroad.MainApplication;
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.util.SystemBarTintManager;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
-public class BaseActivity extends Activity {
+public class BaseActivity extends FragmentActivity {
     public LoadProgress progress;
     public MainApplication app;
     private static Boolean isExit = false;

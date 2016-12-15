@@ -27,7 +27,8 @@
         <activity android:name=".dev.PersonalCenterActivity" />
         <activity android:name=".dev.ArtistActivity" />
         <activity android:name=".dev.StoreActivity" />
-        <activity android:name=".dev.CooperativeActivity"></activity>
+        <activity android:name=".dev.CooperativeActivity" />
+        <activity android:name=".dev.AddressActivity"></activity>
     </application>
 
 </manifest>
