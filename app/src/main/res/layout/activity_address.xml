@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_address"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     tools:context="com.dawei.silkroad.dev.AddressActivity">
 
     <include layout="@layout/common_title"></include>
+
+    <ListView
+        android:id="@+id/list_address"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></ListView>
 
     <RelativeLayout
         android:id="@+id/rl_add"
@@ -26,4 +33,4 @@
 
 
     </RelativeLayout>
-</RelativeLayout>
+</LinearLayout>

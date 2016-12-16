@@ -2,20 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.dawei.silkroad.dev.fragments.HomePagerFragment">
 
-    <LinearLayout
+    <include layout="@layout/common_title"></include>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"></com.jcodecraeer.xrecyclerview.XRecyclerView>
 
-
-
-
-        <com.jcodecraeer.xrecyclerview.XRecyclerView
-            android:id="@+id/rv_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></com.jcodecraeer.xrecyclerview.XRecyclerView>
-    </LinearLayout>
 
 </LinearLayout>

@@ -8,8 +8,6 @@
     android:orientation="vertical"
     tools:context="com.dawei.silkroad.dev.HomePagerActivity">
 
-    <include layout="@layout/common_title"></include>
-
     <FrameLayout
         android:id="@+id/fg"
         android:layout_width="match_parent"

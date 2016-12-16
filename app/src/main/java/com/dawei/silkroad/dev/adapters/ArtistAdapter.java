@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
+import com.dawei.silkroad.dev.AddressActivity;
 import com.dawei.silkroad.dev.AddressManagerActivity;
 
 import java.util.List;
@@ -37,14 +38,14 @@ public class ArtistAdapter extends RecyclerView.Adapter<ArtistAdapter.MyHolder> 
         holder.img_header.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                context.startActivity(new Intent(context, AddressManagerActivity.class));
+                context.startActivity(new Intent(context, AddressActivity.class));
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return 9;
+        return 6;
     }
 
     public class MyHolder extends RecyclerView.ViewHolder {

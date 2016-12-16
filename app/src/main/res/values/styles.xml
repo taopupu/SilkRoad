@@ -49,6 +49,11 @@
         <item name="android:backgroundDimEnabled">false</item>
     </style>
 
+    <style name="textView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorDarkGray</item>
+    </style>
+
     <style name="input_style" parent="@android:style/TextAppearance">
         <item name="android:paddingLeft">10dp</item>
         <item name="android:textSize">15sp</item>
@@ -81,6 +86,7 @@
         <item name="android:button">@drawable/radio_cheax</item>
         <item name="android:textColor">@color/colorDarkGray</item>
     </style>
+
     <style name="check_box">
         <item name="android:drawablePadding">4dp</item>
         <item name="android:button">@drawable/radio_check</item>

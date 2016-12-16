@@ -30,7 +30,9 @@
         <activity android:name=".dev.CooperativeActivity" />
         <activity android:name=".dev.AddressActivity" />
         <activity android:name=".dev.AddressManagerActivity" />
-        <activity android:name=".dev.MineAddressActivity"></activity>
+        <activity android:name=".dev.MineAddressActivity" />
+        <activity android:name=".dev.MineAddressManagerActivity" />
+        <activity android:name=".dev.SettingActivity"></activity>
     </application>
 
 </manifest>

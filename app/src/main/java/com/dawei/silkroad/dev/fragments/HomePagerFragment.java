@@ -28,6 +28,7 @@ public class HomePagerFragment extends Fragment {
     private List<Integer> list;
     private List<Integer> content;
     private XRecyclerView rv_content;
+    View view;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -38,7 +39,16 @@ public class HomePagerFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home_pager, container, false);
+        if (null != view) {
+            ViewGroup parent = (ViewGroup) view.getParent();
+            if (parent != null) {
+                parent.removeView(view);
+            }
+        }
+        if (null == view) {
+            view = inflater.inflate(R.layout.fragment_home_pager, null);
+        }
+        return view;
     }
 
     @Override
@@ -58,12 +68,13 @@ public class HomePagerFragment extends Fragment {
         content.add(2);
         rv_content = (XRecyclerView) getActivity().findViewById(R.id.rv_content);
         rv_content.setLayoutManager(new LinearLayoutManager(getActivity()));
-        View view = LayoutInflater.from(getActivity()).inflate(R.layout.item_header_view, null);
-        rv_content.addHeaderView(view);
+        View view1 = LayoutInflater.from(getActivity()).inflate(R.layout.item_header_view, null);
+        rv_content.addHeaderView(view1);
         rv_content.setAdapter(new HomeAdapter(content, getActivity()));
-        TextView tv_title = (TextView) getActivity().findViewById(R.id.tv_title);
+        TextView tv_title = (TextView) view.findViewById(R.id.tv_title);
         tv_title.setText("丝路汇");
-        convenientBanner = (ConvenientBanner) view.findViewById(R.id.convenientBanner);
+        view.findViewById(R.id.title_back).setVisibility(View.GONE);
+        convenientBanner = (ConvenientBanner) view1.findViewById(R.id.convenientBanner);
         convenientBanner.setPages(
                 new CBViewHolderCreator<LocalImageHolderView>() {
                     @Override
