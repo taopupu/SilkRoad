@@ -29,6 +29,7 @@ import com.dawei.silkroad.dev.fragments.HomePagerFragment;
 import com.dawei.silkroad.dev.fragments.MineFragment;
 import com.dawei.silkroad.dev.logic.ChangePwdActivity;
 import com.dawei.silkroad.dev.logic.LoginActivity;
+import com.dawei.silkroad.view.DialogStringChoose;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -82,7 +83,23 @@ public class HomePagerActivity extends BaseActivity implements View.OnClickListe
                 switchContent(showFragment,f1,transaction,manager);
                 break;
             case R.id.lin_mine:
-
+                List<String> list = new ArrayList<>();
+                list.add("abc");
+                list.add("bac");
+                list.add("dac");
+                list.add("eac");
+                list.add("fac");
+                list.add("gac");
+                DialogStringChoose dialogStringChoose = new DialogStringChoose(HomePagerActivity.this);
+                dialogStringChoose.setInitData(list);
+                dialogStringChoose.setItemData("eac");
+                dialogStringChoose.setOnDataChooseListener(new DialogStringChoose.OnDataChooseListener() {
+                    @Override
+                    public void OnDataChoose(String date) {
+                        toast(date);
+                    }
+                });
+                dialogStringChoose.show();
                 switchContent(showFragment,f2,transaction,manager);
                 break;
         }

@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
 import com.dawei.silkroad.dev.HomePagerActivity;
-import com.dawei.silkroad.util.StringUtil;
+import com.dawei.silkroad.util.StringUtils;
 
 public class LoginActivity extends BaseActivity implements View.OnClickListener, TextWatcher {
     private EditText et_phone;
@@ -82,7 +82,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
     @Override
     public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
         String phone = et_phone.getText().toString();
-        if (StringUtil.isEmpty(phone)) {
+        if (StringUtils.isEmpty(phone)) {
             icon_close.setVisibility(View.GONE);
         } else {
             icon_close.setVisibility(View.VISIBLE);
@@ -92,13 +92,13 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
 
     private void doLogic() {
         String phone = et_phone.getText().toString();
-        if (StringUtil.isEmpty(phone)||!StringUtil.isPhone(phone)) {
+        if (StringUtils.isEmpty(phone)||!StringUtils.isPhone(phone)) {
             toast("请输入正确的手机号");
             return;
         }
 
         String password = et_pwd.getText().toString();
-        if (StringUtil.isNotValidePwd(password)) {
+        if (StringUtils.isNotValidePwd(password)) {
             toast("密码需在6-20位之间");
             return;
         }

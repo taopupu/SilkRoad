@@ -10,4 +10,44 @@
     <color name="colorGray">#B6B6B6</color>
     <!--<color name="colorBtn">#fd7b24</color>-->
     <color name="colorBtn">#ff6358</color>
+
+
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_black">#55000000</color>
+    <color name="transparent_black1">#77000000</color>
+    <color name="white">#ffffff</color>
+    <color name="line">#dedede</color>
+    <color name="line_light">#EFEFEF</color>
+    <color name="translucent_white">#a6ffffff</color>
+    <color name="translucent_white1">#eeffffff</color>
+    <color name="translucent_white2">#66ffffff</color>
+    <color name="gray_silver">#ebedf0</color>
+    <color name="gray_white">#FFF5F5F5</color>
+    <color name="gray_light">#cccccc</color>
+    <color name="gray_slate">#b2b9c3</color>
+    <color name="gray_auxiliary">#9ea6ae</color>
+    <color name="gray_hallow">#838d98</color>
+    <color name="gray_steel">#FF708090</color>
+    <color name="grey_dark">#888888</color>
+    <color name="gray_bleak">#777777</color>
+    <color name="gray_common">#6b6b6b</color>
+    <color name="gray_common1">#5B5A5A</color>
+    <color name="gray">#333333</color>
+    <color name="black">#23232e</color>
+
+    <color name="red">#dd2727</color>
+    <color name="yellow">#FBDB05</color>
+    <color name="yellow_bark">#E4C706</color>
+    <color name="orange">#ff4400</color>
+    <color name="orange_bark">#DA4610</color>
+    <color name="brown">#b47e6b</color>
+    <color name="dodge_blue">#008bfe</color>
+    <color name="bottle_green">#00a300</color>
+    <color name="green">#1DB41D</color>
+    <color name="green_light">#34E186</color>
+    <color name="green1">#17C266</color>
+
+    <color name="reback">#F1ECEC</color>
+    <color name="text_dark_light">#646464</color>
 </resources>
