@@ -1,6 +1,7 @@
 package com.dawei.silkroad.dev.fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -17,6 +18,7 @@ import com.bigkoo.convenientbanner.holder.Holder;
 import com.bigkoo.convenientbanner.listener.OnItemClickListener;
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.dev.adapters.HomeAdapter;
+import com.dawei.silkroad.dev.artists.ArtistOfficialActivity;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 
 import java.util.ArrayList;
@@ -69,6 +71,12 @@ public class HomePagerFragment extends Fragment {
         rv_content = (XRecyclerView) getActivity().findViewById(R.id.rv_content);
         rv_content.setLayoutManager(new LinearLayoutManager(getActivity()));
         View view1 = LayoutInflater.from(getActivity()).inflate(R.layout.item_header_view, null);
+        view1.findViewById(R.id.artist).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), ArtistOfficialActivity.class));
+            }
+        });
         rv_content.addHeaderView(view1);
         rv_content.setAdapter(new HomeAdapter(content, getActivity()));
         TextView tv_title = (TextView) view.findViewById(R.id.tv_title);

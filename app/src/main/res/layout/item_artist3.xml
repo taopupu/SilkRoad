@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:visibility="gone"
-    >
+    android:visibility="gone">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,13 +16,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="*个人简介:"
+            android:text="@string/individual_resume"
             android:textColor="@color/colorDarkGray"
             android:textSize="15sp" />
 
         <EditText
             style="@style/input_style"
-            android:paddingTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:layout_marginLeft="40dp"
@@ -32,6 +30,7 @@
             android:layout_weight="1"
             android:background="@drawable/text_border"
             android:gravity="top"
+            android:paddingTop="5dp"
             android:textColorHint="@color/colorGray" />
     </LinearLayout>
 
@@ -45,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="*常用头像:"
+            android:text="@string/common_head"
             android:textColor="@color/colorDarkGray"
             android:textSize="15sp" />
 
@@ -61,7 +60,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="70dp"
-            android:text="未上传"
+            android:text="@string/not_uploaded"
             android:textColor="@color/colorDarkGray"
             android:textSize="15sp" />
     </LinearLayout>
@@ -76,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="*身份证正面:"
+            android:text="@string/positive_identity_card"
             android:textColor="@color/colorDarkGray"
             android:textSize="15sp" />
 
@@ -92,7 +91,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="70dp"
-            android:text="未上传"
+            android:text="@string/not_uploaded"
             android:textColor="@color/colorDarkGray"
             android:textSize="15sp" />
     </LinearLayout>
@@ -107,7 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="*身份证反面:"
+            android:text="@string/the_opposite_of_ID_card"
             android:textColor="@color/colorDarkGray"
             android:textSize="15sp" />
 
@@ -123,7 +122,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="70dp"
-            android:text="未上传"
+            android:text="@string/not_uploaded"
             android:textColor="@color/colorDarkGray"
             android:textSize="15sp" />
     </LinearLayout>
@@ -138,7 +137,7 @@
         android:layout_marginRight="70dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/login_btn"
-        android:text="提交审核"
+        android:text="@string/submit_audit"
         android:textColor="@color/colorWhite"
         android:textSize="16sp" />
 </LinearLayout>

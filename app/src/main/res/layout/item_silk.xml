@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="丝路商城"
+            android:text="@string/The_Silk_Road_Mall"
             android:textColor="@color/colorDarkGray"
             android:textSize="20sp" />
     </LinearLayout>
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="今日推荐"
+                android:text="@string/today_recommended"
                 android:textColor="@color/colorDarkGray"
                 android:textSize="15sp" />
         </RelativeLayout>
@@ -66,7 +66,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:text="新年特惠"
+                    android:text="@string/new_year_special"
                     android:textColor="@color/colorDarkGray"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -85,7 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:text="十分有趣"
+                    android:text="@string/very_interesting"
                     android:textColor="@color/colorDarkGray"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -120,7 +120,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:text="新年特惠"
+                    android:text="@string/new_year_special"
                     android:textColor="@color/colorDarkGray"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -139,7 +139,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:text="十分有趣"
+                    android:text="@string/very_interesting"
                     android:textColor="@color/colorDarkGray"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -159,7 +159,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="今日推荐"
+                android:text="@string/today_recommended"
                 android:textColor="@color/colorDarkGray"
                 android:textSize="15sp" />
         </RelativeLayout>

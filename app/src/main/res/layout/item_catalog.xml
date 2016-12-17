@@ -16,14 +16,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:gravity="center_vertical"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
 
         <com.dawei.silkroad.util.CircleImageView
             android:id="@+id/img_head"
-            android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:src="@mipmap/ic_launcher" />
 
         <LinearLayout
@@ -36,9 +36,9 @@
                 android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="艺术家名称:"
-                android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/artist_name"
                 android:textColor="@color/colorDarkGray"
                 android:textSize="15sp" />
 
@@ -54,7 +54,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="类别："
+                    android:text="@string/type"
                     android:textColor="@color/colorDarkGray"
                     android:textSize="15sp" />
 
@@ -63,7 +63,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="地域："
+                    android:text="@string/region"
                     android:textColor="@color/colorDarkGray"
                     android:textSize="15sp" />
             </LinearLayout>
@@ -73,7 +73,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:text="合作方式：     签约" />
+                android:text="@string/ways_of_cooperation" />
         </LinearLayout>
     </LinearLayout>
 

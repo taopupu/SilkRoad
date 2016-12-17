@@ -4,8 +4,8 @@
     android:id="@+id/activity_address"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context="com.dawei.silkroad.dev.AddressActivity">
 
     <include layout="@layout/common_title"></include>
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="新增收货地址" />
+            android:text="@string/add_address" />
 
         <include layout="@layout/layout_line"></include>
 

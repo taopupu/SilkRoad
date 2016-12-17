@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="所在区域"
+                android:text="@string/domain"
                 android:textColor="#b6b5b5" />
         </LinearLayout>
 
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="街道"
+                android:text="@string/street"
                 android:textColor="#b6b5b5" />
         </LinearLayout>
 
@@ -110,7 +110,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="详细地址"
+                android:text="@string/detailedAddress"
                 android:textColor="#b6b5b5" />
         </LinearLayout>
 
@@ -149,7 +149,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="收件人姓名"
+                android:text="@string/recipient_name"
                 android:textColor="#b6b5b5" />
         </LinearLayout>
 
@@ -188,7 +188,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="手机号码"
+                android:text="@string/phone"
                 android:textColor="#b6b5b5" />
         </LinearLayout>
 
@@ -227,7 +227,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="邮编"
+                android:text="@string/zipCode"
                 android:textColor="#b6b5b5" />
         </LinearLayout>
 
@@ -254,13 +254,13 @@
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
-            android:text="删除" />
+            android:text="@string/delete" />
 
         <Button
             style="@style/btn_style"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
-            android:text="保存" />
+            android:text="@string/save" />
     </LinearLayout>
 </LinearLayout>

@@ -4,8 +4,8 @@
     android:id="@+id/activity_mine_address"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context="com.dawei.silkroad.dev.MineAddressActivity">
 
     <include layout="@layout/common_title"></include>
@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="请选择区域:"
+            android:text="@string/please_select_area"
             android:textColor="@color/colorDarkGray"
             android:textSize="15sp" />
 
@@ -51,7 +51,7 @@
         android:layout_marginRight="25dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/text_border"
-        android:hint="请输入街道地址" />
+        android:hint="@string/street_address" />
 
     <EditText
 
@@ -62,7 +62,7 @@
         android:layout_marginRight="25dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/text_border"
-        android:hint="请输入详细地址" />
+        android:hint="@string/detailed_address" />
 
     <EditText
 
@@ -73,7 +73,7 @@
         android:layout_marginRight="25dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/text_border"
-        android:hint="请输入收货人姓名" />
+        android:hint="@string/receiver_name" />
 
     <EditText
 
@@ -84,7 +84,7 @@
         android:layout_marginRight="25dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/text_border"
-        android:hint="请输入联系电话" />
+        android:hint="@string/receiver_phone" />
 
     <EditText
         style="@style/input_style"
@@ -94,10 +94,10 @@
         android:layout_marginRight="25dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/text_border"
-        android:hint="请输入邮编" />
+        android:hint="@string/zip_code" />
 
     <Button
         style="@style/btn_style"
 
-        android:text="保存" />
+        android:text="@string/save" />
 </LinearLayout>

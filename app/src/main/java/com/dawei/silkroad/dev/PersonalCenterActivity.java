@@ -20,13 +20,5 @@ public class PersonalCenterActivity extends BaseActivity {
         setContentView(R.layout.activity_personal_center);
     }
 
-    private void initView() {
-        xRecyclerView = get(R.id.rv_view);
-        for (int i = 0; i < 20; i++) {
-            list.add(R.mipmap.ic_launcher);
-        }
-        xRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-    }
-
 
 }

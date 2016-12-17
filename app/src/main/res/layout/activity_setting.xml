@@ -39,7 +39,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
             android:gravity="center_vertical"
-            android:text="收货地址管理" />
+            android:text="@string/receipt_address_management" />
 
         <View
             android:layout_width="fill_parent"
@@ -58,7 +58,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
             android:gravity="center_vertical"
-            android:text="使用说明" />
+            android:text="@string/direction_for_use" />
 
         <View
             android:layout_width="fill_parent"
@@ -77,7 +77,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
             android:gravity="center_vertical"
-            android:text="清除缓存" />
+            android:text="@string/clear_cache" />
 
         <View
             android:layout_width="fill_parent"
@@ -96,7 +96,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
             android:gravity="center_vertical"
-            android:text="是否是最新版本" />
+            android:text="@string/check_for_updates" />
 
         <View
             android:layout_width="fill_parent"
@@ -115,7 +115,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
             android:gravity="center_vertical"
-            android:text="关于我们" />
+            android:text="@string/about_us" />
 
         <View
             android:layout_width="fill_parent"

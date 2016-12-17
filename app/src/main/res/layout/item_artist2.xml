@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginTop="8dp"
-            android:text="*擅长类型:"
+            android:text="@string/be_good_at_type"
             android:textColor="@color/colorDarkGray"
             android:textSize="15sp" />
 
@@ -32,25 +32,25 @@
                 android:layout_height="wrap_content">
 
                 <CheckBox
+                    style="@style/check_box"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    style="@style/check_box"
-                    android:text="国画" />
+                    android:text="@string/traditional_Chinese_painting" />
 
                 <CheckBox
+                    style="@style/check_box"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    style="@style/check_box"
-                    android:text="油画" />
+                    android:text="@string/oil_painting" />
 
                 <CheckBox
+                    style="@style/check_box"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    style="@style/check_box"
-                    android:text="书法" />
+                    android:text="@string/handwriting" />
             </LinearLayout>
 
             <LinearLayout
@@ -58,33 +58,33 @@
                 android:layout_height="wrap_content">
 
                 <CheckBox
+                    style="@style/check_box"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    style="@style/check_box"
-                    android:text="当代艺术" />
+                    android:text="@string/Contemporary_Art" />
 
                 <CheckBox
+                    style="@style/check_box"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    style="@style/check_box"
-                    android:text="雕刻" />
+                    android:text="@string/grave" />
 
                 <CheckBox
+                    style="@style/check_box"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    style="@style/check_box"
-                    android:text="非遗产品" />
+                    android:text="@string/product" />
             </LinearLayout>
 
             <CheckBox
+                style="@style/check_box"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                style="@style/check_box"
-                android:text="非遗产品" />
+                android:text="@string/art_work" />
         </LinearLayout>
     </LinearLayout>
 
@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginTop="8dp"
-            android:text="*毕业院校:"
+            android:text="@string/graduate_institutions"
             android:textColor="@color/colorDarkGray"
             android:textSize="15sp" />
 
@@ -117,7 +117,7 @@
                 android:layout_marginLeft="12dp"
                 android:layout_marginRight="12dp"
                 android:background="@drawable/text_border"
-                android:hint="请输入院校名称"
+                android:hint="@string/name_institution"
                 android:textColorHint="@color/colorGray" />
 
             <RadioGroup
@@ -131,25 +131,25 @@
                     android:layout_height="wrap_content">
 
                     <RadioButton
+                        style="@style/radio_btn"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        style="@style/radio_btn"
-                        android:text="大专" />
+                        android:text="@string/junior_college" />
 
                     <RadioButton
+                        style="@style/radio_btn"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        style="@style/radio_btn"
-                        android:text="本科" />
+                        android:text="@string/regular_college_course" />
 
                     <RadioButton
+                        style="@style/radio_btn"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        style="@style/radio_btn"
-                        android:text="硕士" />
+                        android:text="@string/master" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -157,18 +157,18 @@
                     android:layout_height="wrap_content">
 
                     <RadioButton
+                        style="@style/radio_btn"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        style="@style/radio_btn"
-                        android:text="博士" />
+                        android:text="@string/learned_scholar" />
 
                     <RadioButton
+                        style="@style/radio_btn"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        style="@style/radio_btn"
-                        android:text="其他" />
+                        android:text="@string/other" />
 
                 </LinearLayout>
             </RadioGroup>

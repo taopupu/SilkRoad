@@ -6,8 +6,4 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context="com.dawei.silkroad.dev.PersonalCenterActivity">
-<com.jcodecraeer.xrecyclerview.XRecyclerView
-    android:id="@+id/rv_view"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"></com.jcodecraeer.xrecyclerview.XRecyclerView>
 </RelativeLayout>
