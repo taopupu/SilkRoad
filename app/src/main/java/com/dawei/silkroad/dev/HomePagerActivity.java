@@ -34,6 +34,9 @@ import com.dawei.silkroad.view.DialogStringChoose;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 主页面(首页、我的等)
+ */
 public class HomePagerActivity extends BaseActivity implements View.OnClickListener {
     private FragmentManager manager;
 //    private Fragment[] fragment;
@@ -83,23 +86,6 @@ public class HomePagerActivity extends BaseActivity implements View.OnClickListe
                 switchContent(showFragment,f1,transaction,manager);
                 break;
             case R.id.lin_mine:
-                List<String> list = new ArrayList<>();
-                list.add("abc");
-                list.add("bac");
-                list.add("dac");
-                list.add("eac");
-                list.add("fac");
-                list.add("gac");
-                DialogStringChoose dialogStringChoose = new DialogStringChoose(HomePagerActivity.this);
-                dialogStringChoose.setInitData(list);
-                dialogStringChoose.setItemData("eac");
-                dialogStringChoose.setOnDataChooseListener(new DialogStringChoose.OnDataChooseListener() {
-                    @Override
-                    public void OnDataChoose(String date) {
-                        toast(date);
-                    }
-                });
-                dialogStringChoose.show();
                 switchContent(showFragment,f2,transaction,manager);
                 break;
         }

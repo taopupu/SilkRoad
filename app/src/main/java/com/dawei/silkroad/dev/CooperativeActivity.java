@@ -1,7 +1,5 @@
 package com.dawei.silkroad.dev;
 
-import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,8 +12,9 @@ import android.widget.TextView;
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
 
-import java.util.List;
-
+/**
+ * 合作艺术家目录 页面
+ */
 public class CooperativeActivity extends BaseActivity {
     private RecyclerView rv_catalog;
 
