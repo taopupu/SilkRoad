@@ -30,6 +30,8 @@
     <string name="address">我的收货地址</string>
     <string name="mine">我的</string>
     <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
     <string-array name="sp_native_place">
         <item>北京</item>
         <item>陕西</item>
