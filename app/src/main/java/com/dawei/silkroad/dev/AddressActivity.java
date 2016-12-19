@@ -10,6 +10,11 @@ import android.widget.TextView;
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
 import com.dawei.silkroad.dev.adapters.ReceiveAddressAdapter;
+import com.dawei.silkroad.view.DialogStringChoose;
+import com.dawei.silkroad.view.loopView.LoopView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class AddressActivity extends BaseActivity implements View.OnClickListener {
     RelativeLayout rl_add;
@@ -47,10 +52,22 @@ public class AddressActivity extends BaseActivity implements View.OnClickListene
         switch (view.getId()) {
             case R.id.rl_add:
                 intentActivity(AddressManagerActivity.class);
+//                aa();
                 break;
             case R.id.title_back:
                 onBackPressed();
                 break;
         }
+    }
+
+    private void aa() {
+        List<String> list = new ArrayList<>();
+        list.add("niha");
+        list.add("niha");
+        list.add("niha");
+        list.add("niha");
+        DialogStringChoose dialogStringChoose = new DialogStringChoose(this);
+        dialogStringChoose.setInitData(list);
+        dialogStringChoose.show();
     }
 }

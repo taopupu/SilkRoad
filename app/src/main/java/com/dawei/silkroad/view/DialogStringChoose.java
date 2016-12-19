@@ -22,14 +22,15 @@ import java.util.Map;
 /**
  * Created by zhangdesheng on 2016/4/19.
  */
-public class DialogStringChoose extends AlertDialog{
+public class DialogStringChoose extends AlertDialog {
 
     private LayoutInflater mInflater;
 
     private LoopView loopView;
+
     private OnDataChooseListener onDataChooseListener;
 
-    private List<String>  Strings;
+    private List<String> Strings;
 
     public DialogStringChoose(Context context) {
         super(context, R.style.BottomDialog);
@@ -62,11 +63,11 @@ public class DialogStringChoose extends AlertDialog{
         if (Strings != null) loopView.setInitPosition(currentPosion);
     }
 
-    public void setOnDataChooseListener(OnDataChooseListener onDataChooseListener){
+    public void setOnDataChooseListener(OnDataChooseListener onDataChooseListener) {
         this.onDataChooseListener = onDataChooseListener;
     }
 
-    private void gsetDecor(){
+    private void gsetDecor() {
         Window window = getWindow();
         window.getDecorView().setPadding(0, 0, 0, 0);
         window.setGravity(Gravity.BOTTOM);
@@ -79,6 +80,7 @@ public class DialogStringChoose extends AlertDialog{
 
     int currentPosion;
     String item = "";
+
     private void setListener() {
         findViewById(R.id.dialog_cancel).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,38 +91,41 @@ public class DialogStringChoose extends AlertDialog{
         findViewById(R.id.dialog_ok).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Strings != null  && Strings.size() != 0)
-                onDataChooseListener.OnDataChoose(Strings.get(currentPosion));
+                if (Strings != null && Strings.size() != 0)
+                    if (onDataChooseListener != null)
+                        onDataChooseListener.OnDataChoose(Strings.get(currentPosion));
+
                 cancel();
             }
+
         });
 
         loopView.setListener(new OnItemSelectedListener() {
             @Override
             public void onItemSelected(int index) {
-                if (index == -1) index = Strings.size()-1;
+                if (index == -1) index = Strings.size() - 1;
                 if (Strings != null) currentPosion = index;
             }
         });
     }
 
     /**  */
-    public void setInitData(List<String>  Strings){
-       this.Strings = Strings;
-        if (Strings != null && !StringUtils.isEmpty(item)){
-            if (Strings.indexOf(item) != -1)  currentPosion = Strings.indexOf(item);
+    public void setInitData(List<String> Strings) {
+        this.Strings = Strings;
+        if (Strings != null && !StringUtils.isEmpty(item)) {
+            if (Strings.indexOf(item) != -1) currentPosion = Strings.indexOf(item);
         }
 
     }
 
-    public void setItemData(String data){
+    public void setItemData(String data) {
         item = data;
-        if (Strings != null && !StringUtils.isEmpty(item)){
-            if (Strings.indexOf(data) != -1)  currentPosion = Strings.indexOf(data);
+        if (Strings != null && !StringUtils.isEmpty(item)) {
+            if (Strings.indexOf(data) != -1) currentPosion = Strings.indexOf(data);
         }
     }
 
-    public interface OnDataChooseListener{
+    public interface OnDataChooseListener {
         public void OnDataChoose(String date);
     }
 }

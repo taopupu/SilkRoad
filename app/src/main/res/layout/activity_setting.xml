@@ -34,6 +34,7 @@
         android:layout_height="45dp">
 
         <TextView
+            android:id="@+id/address_manage"
             style="@style/textView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -17,9 +17,6 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Weidongjian on 2015/8/18.
- */
 public class LoopView extends View {
 
     private float scaleX = 1.05F;

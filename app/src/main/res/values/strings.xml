@@ -24,8 +24,6 @@
     <string name="man">男</string>
     <string name="woman">女</string>
     <string name="store">店铺资料</string>
-    <string name="store_catalog">合作店铺目录</string>
-    <string name="artist_catalog">合作艺术家目录</string>
     <string name="address_manager">收货地址管理</string>
     <string name="address">我的收货地址</string>
     <string name="mine">我的</string>

@@ -12,33 +12,29 @@ import android.widget.TextView;
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
 
-/**
- * 合作艺术家目录 页面
- */
-public class CooperativeActivity extends BaseActivity {
+public class CooperativeStoreActivity extends BaseActivity {
     private RecyclerView rv_catalog;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cooperative);
+        setContentView(R.layout.activity_cooperative_store);
         initView();
         init();
     }
 
     private void initView() {
         TextView textView = get(R.id.tv_title);
-        textView.setText(getResources().getText(R.string.cooperative_artist_directory));
-        rv_catalog = get(R.id.rv_catalog);
+        textView.setText(getResources().getText(R.string.cooperative_store_directory));
+        rv_catalog = get(R.id.cooperative_store);
         rv_catalog.setLayoutManager(new LinearLayoutManager(this));
     }
 
     private void init() {
-        CatalogAdapter adapter = new CatalogAdapter();
+        CooperativeStoreAdapter adapter = new CooperativeStoreAdapter();
         rv_catalog.setAdapter(adapter);
     }
 
-    public class CatalogAdapter extends RecyclerView.Adapter<CatalogAdapter.MyHolder> {
+    public class CooperativeStoreAdapter extends RecyclerView.Adapter<CooperativeStoreAdapter.MyHolder> {
 
         @Override
         public MyHolder onCreateViewHolder(ViewGroup parent, int viewType) {
