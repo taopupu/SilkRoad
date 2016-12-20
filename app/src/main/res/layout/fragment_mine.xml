@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
     android:orientation="vertical"
-    tools:context="com.dawei.silkroad.dev.fragments.MineFragment">
+    tools:context="com.dawei.silkroad.dev.user.ui.MineFragment">
 
     <include layout="@layout/common_title"></include>
 

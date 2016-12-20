@@ -5,5 +5,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.dawei.silkroad.dev.user.PersonalCenterActivity">
+    tools:context="com.dawei.silkroad.dev.user.ui.PersonalCenterActivity">
 </RelativeLayout>

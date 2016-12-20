@@ -1,4 +1,4 @@
-package com.dawei.silkroad.dev.fragments;
+package com.dawei.silkroad.dev.user.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
