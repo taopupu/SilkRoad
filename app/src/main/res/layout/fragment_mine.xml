@@ -217,9 +217,9 @@
 
 
     <RelativeLayout
+        android:id="@+id/coo_opportunity"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:visibility="gone">
+        android:layout_height="45dp">
 
         <TextView
             style="@style/textView"

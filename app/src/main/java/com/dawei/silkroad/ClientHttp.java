@@ -11,8 +11,7 @@ import okhttp3.Response;
 
 public class ClientHttp {
 //
-    public static final MediaType JSON
-            = MediaType.parse("application/json; charset=utf-8");
+
 
     /**
      *

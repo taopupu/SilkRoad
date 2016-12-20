@@ -1,8 +1,6 @@
 package com.dawei.silkroad.dev.fragments;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,7 +10,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.dawei.silkroad.R;
-import com.dawei.silkroad.dev.ArtistActivity;
+import com.dawei.silkroad.dev.ArtistDataActivity;
+import com.dawei.silkroad.dev.CooperationOpportunityActivity;
 import com.dawei.silkroad.dev.CooperativeActivity;
 import com.dawei.silkroad.dev.CooperativeStoreActivity;
 import com.dawei.silkroad.TestActivity;
@@ -58,6 +57,12 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         tv_setting.setText(getResources().getText(R.string.setting));
         tv_setting.setOnClickListener(this);
         view.findViewById(R.id.btn_messages).setOnClickListener(this);
+        view.findViewById(R.id.apply_artist).setOnClickListener(this);
+        view.findViewById(R.id.open_store).setOnClickListener(this);
+        view.findViewById(R.id.cooperative_artist).setOnClickListener(this);
+        view.findViewById(R.id.btn_cooperative_store).setOnClickListener(this);
+        view.findViewById(R.id.lin_login).setOnClickListener(this);
+        view.findViewById(R.id.coo_opportunity).setOnClickListener(this);
     }
 
     @Override
@@ -69,6 +74,23 @@ public class MineFragment extends Fragment implements View.OnClickListener {
             case R.id.btn_messages:
                 startActivity(new Intent(getContext(), MessageActivity.class));
                 break;
+            case R.id.apply_artist:
+                startActivity(new Intent(getContext(), ArtistDataActivity.class));
+                break;
+            case R.id.open_store:
+                startActivity(new Intent(getContext(), StoreActivity.class));
+                break;
+            case R.id.cooperative_artist:
+                startActivity(new Intent(getContext(), CooperativeActivity.class));
+                break;
+            case R.id.btn_cooperative_store:
+                startActivity(new Intent(getContext(), CooperativeStoreActivity.class));
+                break;
+            case R.id.lin_login:
+                startActivity(new Intent(getContext(), LoginActivity.class));
+                break;
+            case R.id.coo_opportunity:
+                startActivity(new Intent(getContext(), CooperationOpportunityActivity.class));
         }
     }
 }

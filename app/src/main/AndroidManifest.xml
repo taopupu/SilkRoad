@@ -25,7 +25,7 @@
         <activity android:name=".dev.logic.ForgetPwdActivity" />
         <activity android:name=".dev.logic.ChangePwdActivity" />
         <activity android:name=".dev.PersonalCenterActivity" />
-        <activity android:name=".dev.ArtistActivity" />
+        <activity android:name=".dev.ArtistDataActivity" />
         <activity android:name=".dev.StoreActivity" />
         <activity android:name=".dev.CooperativeActivity" />
         <activity android:name=".dev.AddressActivity" />
@@ -35,6 +35,12 @@
         <activity android:name=".dev.SettingActivity" />
         <activity android:name=".dev.artists.ArtistOfficialActivity" />
         <activity android:name=".dev.MessageActivity" />
+        <activity android:name=".dev.CooperativeStoreActivity" />
+        <activity android:name=".dev.CooperationOpportunityActivity" />
+        <activity android:name=".dev.MallActivity" />
+        <activity android:name=".dev.ProductDetailsActivity" />
+        <activity android:name=".dev.NewsActivity" />
+        <activity android:name=".dev.artists.ArtistActivity"></activity>
         <activity android:name=".TestActivity"></activity>
         <activity android:name=".dev.SettingActivity" />
         <activity android:name=".dev.artists.ArtistOfficialActivity" />

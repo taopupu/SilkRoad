@@ -28,7 +28,7 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
 
-public class ArtistActivity extends BaseActivity implements View.OnClickListener {
+public class ArtistDataActivity extends BaseActivity implements View.OnClickListener {
     private LinearLayout lin_artist1, lin_artist2, lin_artist3;
     private Button btn_next1, btn_next2, btn_submit;
     private ImageView img_back;
