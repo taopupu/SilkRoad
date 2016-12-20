@@ -63,7 +63,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:text="作品出售类型：定价" />
+                        android:text="@string/sale_type" />
 
                     <TextView
                         style="@style/textView"
@@ -71,7 +71,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:text="价格：10000元" />
+                        android:text="@string/price" />
                 </LinearLayout>
 
                 <View
@@ -97,7 +97,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:text="作者：张三" />
+                        android:text="@string/author" />
 
                     <TextView
                         style="@style/textView"
@@ -105,7 +105,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:text="创作年代：2016年" />
+                        android:text="@string/creation_time" />
                 </LinearLayout>
 
                 <View
@@ -131,7 +131,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:text="目前持有人：张三" />
+                        android:text="@string/current_holder" />
 
                     <TextView
                         style="@style/textView"
@@ -139,7 +139,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
-                        android:text="进入个人官网"
+                        android:text="@string/into_the_personal_official_website"
                         android:textColor="#2e97a1" />
                 </LinearLayout>
 
@@ -161,7 +161,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:text="使用场景：客厅" />
+                    android:text="@string/use_scenario" />
 
                 <View
                     android:layout_width="fill_parent"
@@ -186,7 +186,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="10dp"
                         android:gravity="center_vertical"
-                        android:text="产品参数：" />
+                        android:text="@string/product_parameters" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -200,7 +200,7 @@
                             android:layout_marginLeft="50dp"
                             android:layout_weight="1"
                             android:gravity="center_vertical"
-                            android:text="技法：印刷" />
+                            android:text="@string/technique" />
 
                         <TextView
                             style="@style/textView"
@@ -208,7 +208,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center_vertical"
-                            android:text="题材：生活" />
+                            android:text="@string/theme" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -224,7 +224,7 @@
                             android:layout_marginLeft="50dp"
                             android:layout_weight="1"
                             android:gravity="center_vertical"
-                            android:text="性质：其他" />
+                            android:text="@string/property" />
 
                         <TextView
                             style="@style/textView"
@@ -232,7 +232,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center_vertical"
-                            android:text="材质：纸品" />
+                            android:text="@string/material" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -253,7 +253,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20dp"
                     android:gravity="center_vertical"
-                    android:text="更多详情：" />
+                    android:text="@string/more_details" />
 
                 <View
                     android:layout_width="fill_parent"
@@ -274,13 +274,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/text_border"
-            android:text="加入购物车" />
+            android:text="@string/join_a_shopping_cart" />
 
         <Button
+            android:id="@+id/btn_buy"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/text_border"
-            android:text="在线购买" />
+            android:text="@string/buy_online" />
     </LinearLayout>
 </LinearLayout>

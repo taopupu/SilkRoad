@@ -31,6 +31,7 @@ public class ProductDetailsActivity extends BaseActivity implements View.OnClick
         TextView tv_title = get(R.id.tv_title);
         TextView share = get(R.id.tv_titleRight);
         share.setOnClickListener(this);
+        get(R.id.btn_buy).setOnClickListener(this);
         tv_title.setText(getResources().getText(R.string.detail));
         share.setText(getResources().getText(R.string.share));
         onBack(get(R.id.title_back));
@@ -65,6 +66,9 @@ public class ProductDetailsActivity extends BaseActivity implements View.OnClick
         switch (view.getId()) {
             case R.id.tv_titleRight:
                 showPopWindow(null);
+                break;
+            case R.id.btn_buy:
+                intentActivity(FirmOrderActivity.class);
                 break;
         }
     }
