@@ -1,4 +1,4 @@
-package com.dawei.silkroad.dev.artists;
+package com.dawei.silkroad.dev.artists.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;

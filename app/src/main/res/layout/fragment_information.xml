@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context="com.dawei.silkroad.dev.artists.InformationFragment">
+    tools:context="com.dawei.silkroad.dev.artists.ui.InformationFragment">
 
     <TextView
         style="@style/textView"

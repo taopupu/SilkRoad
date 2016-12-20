@@ -1,4 +1,4 @@
-package com.dawei.silkroad.dev.artists;
+package com.dawei.silkroad.dev.artists.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

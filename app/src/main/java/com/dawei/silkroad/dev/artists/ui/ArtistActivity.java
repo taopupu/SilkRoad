@@ -1,4 +1,4 @@
-package com.dawei.silkroad.dev.artists;
+package com.dawei.silkroad.dev.artists.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

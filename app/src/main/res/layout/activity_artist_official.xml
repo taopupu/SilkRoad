@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
-    tools:context="com.dawei.silkroad.dev.artists.ArtistOfficialActivity">
+    tools:context="com.dawei.silkroad.dev.artists.ui.ArtistOfficialActivity">
 
     <include layout="@layout/common_title"></include>
 

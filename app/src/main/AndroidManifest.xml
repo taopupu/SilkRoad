@@ -20,32 +20,32 @@
         </activity>
         <activity android:name=".base.BaseActivity" />
         <activity android:name=".dev.logic.LoginActivity" />
-        <activity android:name=".dev.HomePagerActivity" />
+        <activity android:name=".dev.home.ui.HomePagerActivity" />
         <activity android:name=".dev.logic.RegisterActivity" />
         <activity android:name=".dev.logic.ForgetPwdActivity" />
         <activity android:name=".dev.logic.ChangePwdActivity" />
-        <activity android:name=".dev.PersonalCenterActivity" />
-        <activity android:name=".dev.ArtistDataActivity" />
-        <activity android:name=".dev.StoreActivity" />
-        <activity android:name=".dev.CooperativeActivity" />
-        <activity android:name=".dev.AddressActivity" />
-        <activity android:name=".dev.AddressManagerActivity" />
-        <activity android:name=".dev.MineAddressActivity" />
-        <activity android:name=".dev.MineAddressManagerActivity" />
-        <activity android:name=".dev.SettingActivity" />
-        <activity android:name=".dev.artists.ArtistOfficialActivity" />
-        <activity android:name=".dev.MessageActivity" />
-        <activity android:name=".dev.CooperativeStoreActivity" />
-        <activity android:name=".dev.CooperationOpportunityActivity" />
-        <activity android:name=".dev.MallActivity" />
-        <activity android:name=".dev.ProductDetailsActivity" />
-        <activity android:name=".dev.NewsActivity" />
-        <activity android:name=".dev.artists.ArtistActivity"></activity>
+        <activity android:name=".dev.user.PersonalCenterActivity" />
+        <activity android:name=".dev.artists.ui.ArtistDataActivity" />
+        <activity android:name=".dev.store.ui.StoreActivity" />
+        <activity android:name=".dev.cooperative.CooperativeActivity" />
+        <activity android:name=".dev.address.ui.AddressActivity" />
+        <activity android:name=".dev.address.ui.AddressManagerActivity" />
+        <activity android:name=".dev.address.ui.MineAddressActivity" />
+        <activity android:name=".dev.address.ui.MineAddressManagerActivity" />
+        <activity android:name=".dev.setting.SettingActivity" />
+        <activity android:name=".dev.artists.ui.ArtistOfficialActivity" />
+        <activity android:name=".dev.message.MessageActivity" />
+        <activity android:name=".dev.cooperative.CooperativeStoreActivity" />
+        <activity android:name=".dev.cooperative.CooperationOpportunityActivity" />
+        <activity android:name=".dev.store.ui.MallActivity" />
+        <activity android:name=".dev.store.ui.ProductDetailsActivity" />
+        <activity android:name=".dev.news.NewsActivity" />
+        <activity android:name=".dev.artists.ui.ArtistActivity"></activity>
         <activity android:name=".TestActivity"></activity>
-        <activity android:name=".dev.SettingActivity" />
-        <activity android:name=".dev.artists.ArtistOfficialActivity" />
-        <activity android:name=".dev.MessageActivity" />
-        <activity android:name=".dev.CooperativeStoreActivity"></activity>
+        <activity android:name=".dev.setting.SettingActivity" />
+        <activity android:name=".dev.artists.ui.ArtistOfficialActivity" />
+        <activity android:name=".dev.message.MessageActivity" />
+        <activity android:name=".dev.cooperative.CooperativeStoreActivity"></activity>
     </application>
 
 </manifest>

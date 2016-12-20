@@ -1,7 +1,5 @@
-package com.dawei.silkroad.dev.artists;
+package com.dawei.silkroad.dev.artists.ui;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,16 +10,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.dawei.silkroad.R;
+import com.dawei.silkroad.dev.artists.adapter.PersonalPointAdapter;
 
-public class WorksFragment extends Fragment {
-
+public class PersonalPointFragment extends Fragment {
     private View view;
-    private RecyclerView rv_works;
+    private RecyclerView rv_point;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -34,7 +31,7 @@ public class WorksFragment extends Fragment {
             }
         }
         if (null == view) {
-            view = inflater.inflate(R.layout.fragment_works, null);
+            view = inflater.inflate(R.layout.fragment_personal_point, null);
         }
         return view;
     }
@@ -46,9 +43,9 @@ public class WorksFragment extends Fragment {
     }
 
     private void initView() {
-        rv_works = (RecyclerView) view.findViewById(R.id.rv_works);
-        rv_works.setLayoutManager(new LinearLayoutManager(getActivity()));
-        rv_works.setAdapter(new WorksAdapter());
+        rv_point = (RecyclerView) view.findViewById(R.id.rv_point);
+        rv_point.setLayoutManager(new LinearLayoutManager(getActivity()));
+        rv_point.setAdapter(new PersonalPointAdapter());
     }
 
 }

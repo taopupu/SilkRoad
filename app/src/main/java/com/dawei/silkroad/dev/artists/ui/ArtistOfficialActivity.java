@@ -1,4 +1,4 @@
-package com.dawei.silkroad.dev.artists;
+package com.dawei.silkroad.dev.artists.ui;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
+import com.dawei.silkroad.dev.artists.adapter.TabAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
