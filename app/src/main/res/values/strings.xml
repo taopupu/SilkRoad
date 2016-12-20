@@ -131,6 +131,7 @@
     <string name="business_licence">*营业执照:</string>
     <string name="submit">提交</string>
     <string name="default_address">默认地址</string>
+    <string name="request_fail">请求失败</string>
 
     <string-array name="sp_native_place">
         <item>北京</item>

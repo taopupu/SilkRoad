@@ -35,6 +35,10 @@
         <activity android:name=".dev.SettingActivity" />
         <activity android:name=".dev.artists.ArtistOfficialActivity" />
         <activity android:name=".dev.MessageActivity" />
+        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".dev.SettingActivity" />
+        <activity android:name=".dev.artists.ArtistOfficialActivity" />
+        <activity android:name=".dev.MessageActivity" />
         <activity android:name=".dev.CooperativeStoreActivity"></activity>
     </application>
 

@@ -16,10 +16,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.dawei.silkroad.base.BaseActivity;
+import com.dawei.silkroad.callback.UserCallBack;
 import com.dawei.silkroad.dev.HomePagerActivity;
+import com.dawei.silkroad.http.HttpImple;
+import com.dawei.silkroad.http.IHttp;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import okhttp3.Call;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
     private LinearLayout pointGroup;

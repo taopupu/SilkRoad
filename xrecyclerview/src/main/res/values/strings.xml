@@ -6,4 +6,12 @@
 <string name="refreshing">refreshing...</string>
 <string name="refresh_done">refresh done</string>
 <string name="listview_header_last_time">last update：</string>
+
+<string name="seconds_before">\tseconds ago</string>
+<string name="just">just now</string>
+<string name="minutes_ago">\tminutes ago</string>
+<string name="hours_ago">\thours ago</string>
+<string name="days_ago">\tdays ago</string>
+<string name="months_ago">\tmonths ago</string>
+<string name="years_ago">\tyears ago</string>
 </resources>
