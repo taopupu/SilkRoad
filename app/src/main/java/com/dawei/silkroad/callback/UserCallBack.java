@@ -1,6 +1,6 @@
 package com.dawei.silkroad.callback;
 
-import com.dawei.silkroad.User;
+import com.dawei.silkroad.dev.user.User;
 import com.zhy.http.okhttp.callback.Callback;
 
 import okhttp3.Response;

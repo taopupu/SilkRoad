@@ -10,14 +10,13 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.dawei.silkroad.R;
-import com.dawei.silkroad.dev.ArtistDataActivity;
-import com.dawei.silkroad.dev.CooperationOpportunityActivity;
-import com.dawei.silkroad.dev.CooperativeActivity;
-import com.dawei.silkroad.dev.CooperativeStoreActivity;
-import com.dawei.silkroad.TestActivity;
-import com.dawei.silkroad.dev.MessageActivity;
-import com.dawei.silkroad.dev.SettingActivity;
-import com.dawei.silkroad.dev.StoreActivity;
+import com.dawei.silkroad.dev.artists.ui.ArtistDataActivity;
+import com.dawei.silkroad.dev.cooperative.CooperationOpportunityActivity;
+import com.dawei.silkroad.dev.cooperative.CooperativeActivity;
+import com.dawei.silkroad.dev.cooperative.CooperativeStoreActivity;
+import com.dawei.silkroad.dev.message.MessageActivity;
+import com.dawei.silkroad.dev.setting.SettingActivity;
+import com.dawei.silkroad.dev.store.ui.StoreActivity;
 import com.dawei.silkroad.dev.logic.LoginActivity;
 
 public class MineFragment extends Fragment implements View.OnClickListener {

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
-    tools:context="com.dawei.silkroad.dev.CooperativeStoreActivity">
+    tools:context="com.dawei.silkroad.dev.cooperative.CooperativeStoreActivity">
 
     <include layout="@layout/common_title"></include>
 

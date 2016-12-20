@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.dawei.silkroad.dev.AddressActivity">
+    tools:context="com.dawei.silkroad.dev.address.ui.AddressActivity">
 
     <include layout="@layout/common_title"></include>
 

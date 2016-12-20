@@ -7,10 +7,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
-import com.dawei.silkroad.dev.WHawkTimerBtn;
+import com.dawei.silkroad.view.WHawkTimerBtn;
 
 public class RegisterActivity extends BaseActivity implements View.OnClickListener {
     private EditText editText,et_code,et_pwd1,et_pwd2;

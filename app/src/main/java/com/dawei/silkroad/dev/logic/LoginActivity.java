@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
-import com.dawei.silkroad.dev.HomePagerActivity;
+import com.dawei.silkroad.dev.home.ui.HomePagerActivity;
 import com.dawei.silkroad.util.StringUtils;
 
 public class LoginActivity extends BaseActivity implements View.OnClickListener, TextWatcher {

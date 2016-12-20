@@ -1,6 +1,5 @@
 package com.dawei.silkroad.dev.logic;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,7 +9,7 @@ import android.widget.TextView;
 
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
-import com.dawei.silkroad.dev.WHawkTimerBtn;
+import com.dawei.silkroad.view.WHawkTimerBtn;
 
 public class ChangePwdActivity extends BaseActivity implements View.OnClickListener {
     private TextView tv_title;

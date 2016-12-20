@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.dawei.silkroad.dev.MessageActivity">
+    tools:context="com.dawei.silkroad.dev.message.MessageActivity">
 
     <include layout="@layout/common_title"></include>
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.dawei.silkroad.dev.ArtistDataActivity">
+    tools:context="com.dawei.silkroad.dev.artists.ui.ArtistDataActivity">
 
     <include layout="@layout/common_title"></include>
 
@@ -349,7 +349,7 @@
                         android:inputType="number"
                         android:maxLength="6" />
 
-                    <com.dawei.silkroad.dev.WHawkTimerBtn
+                    <com.dawei.silkroad.view.WHawkTimerBtn
                         android:id="@+id/sendValide"
                         android:layout_width="105dp"
                         android:layout_height="fill_parent"
