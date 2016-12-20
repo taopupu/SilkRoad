@@ -15,6 +15,7 @@ import com.dawei.silkroad.dev.cooperative.CooperationOpportunityActivity;
 import com.dawei.silkroad.dev.cooperative.CooperativeActivity;
 import com.dawei.silkroad.dev.cooperative.CooperativeStoreActivity;
 import com.dawei.silkroad.dev.message.MessageActivity;
+import com.dawei.silkroad.dev.order.ui.OrderActivity;
 import com.dawei.silkroad.dev.setting.SettingActivity;
 import com.dawei.silkroad.dev.store.ui.StoreActivity;
 import com.dawei.silkroad.dev.logic.LoginActivity;
@@ -56,6 +57,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         tv_setting.setText(getResources().getText(R.string.setting));
         tv_setting.setOnClickListener(this);
         view.findViewById(R.id.btn_messages).setOnClickListener(this);
+        view.findViewById(R.id.btn_order).setOnClickListener(this);
         view.findViewById(R.id.apply_artist).setOnClickListener(this);
         view.findViewById(R.id.open_store).setOnClickListener(this);
         view.findViewById(R.id.cooperative_artist).setOnClickListener(this);
@@ -90,6 +92,10 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.coo_opportunity:
                 startActivity(new Intent(getContext(), CooperationOpportunityActivity.class));
+                break;
+            case R.id.btn_order:
+                startActivity(new Intent(getContext(), OrderActivity.class));
+                break;
         }
     }
 }

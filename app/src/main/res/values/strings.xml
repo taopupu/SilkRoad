@@ -137,6 +137,17 @@
     <string name="filter">过滤</string>
     <string name="detail">详情</string>
     <string name="request_fail">请求失败</string>
+    <string name="all">全部</string>
+    <string name="waiting_payment">待付款</string>
+    <string name="waiting_delivery">待发货</string>
+    <string name="waiting_goods_receipt">待收货</string>
+    <string name="waiting_evaluate">待评价</string>
+    <string name="delete_order">删除订单</string>
+    <string name="delivery_info">收货信息</string>
+    <string name="affirm_delivery">确认收货</string>
+    <string name="order_number_is">订单号：%s</string>
+    <string name="count_is">数　量：%s</string>
+    <string name="payment_number_is">付　款：%s</string>
 
     <string-array name="sp_native_place">
         <item>北京</item>

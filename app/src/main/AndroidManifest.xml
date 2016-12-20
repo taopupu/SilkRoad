@@ -42,7 +42,8 @@
         <activity android:name=".dev.news.NewsActivity" />
         <activity android:name=".dev.artists.ui.ArtistActivity" />
         <activity android:name=".TestActivity" />
-        <activity android:name=".dev.store.ui.FirmOrderActivity"></activity>
+        <activity android:name=".dev.store.ui.FirmOrderActivity" />
+        <activity android:name=".dev.order.ui.OrderActivity"></activity>
     </application>
 
 </manifest>
