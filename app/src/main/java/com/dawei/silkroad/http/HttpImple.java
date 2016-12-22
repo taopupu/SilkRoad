@@ -1,15 +1,34 @@
 package com.dawei.silkroad.http;
 
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
+
+import com.dawei.silkroad.callback.HttpCallBack;
+import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.Callback;
+import com.zhy.http.okhttp.callback.StringCallback;
 
-/**
- * Created by yuanbaojun on 2016/12/19.
- */
+import okhttp3.Call;
 
-public class HttpImple extends HttpApi implements IHttp{
+
+public class HttpImple extends HttpApi implements IHttp {
 
     @Override
     public void login(String name, String password, Callback callback) {
-
+        OkHttpUtils.get().url(HttpApi.LOGIN).addParams("account", name).addParams("password", password).build().execute(callback);
     }
+
+    @Override
+    public void sms(String phoneNumber, Callback callBack) {
+        OkHttpUtils.get().url(HttpApi.SMS).addParams("mobileNumber", phoneNumber).build().execute(callBack);
+    }
+
+    @Override
+    public void register(String phoneNumber, String password, String smsCode, Callback callback) {
+        OkHttpUtils.get().url(HttpApi.register).addParams("account", phoneNumber).addParams("password", password).addParams("smsCode", smsCode)
+                .build().execute(callback);
+    }
+
+
 }

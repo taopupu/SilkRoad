@@ -5,16 +5,24 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.dawei.silkroad.MainApplication;
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
+import com.dawei.silkroad.callback.HttpCallBack;
+import com.dawei.silkroad.callback.HttpData;
+import com.dawei.silkroad.callback.UserCallBack;
 import com.dawei.silkroad.dev.home.ui.HomePagerActivity;
+import com.dawei.silkroad.dev.user.bean.User;
 import com.dawei.silkroad.util.StringUtils;
+
+import okhttp3.Call;
 
 public class LoginActivity extends BaseActivity implements View.OnClickListener, TextWatcher {
     private EditText et_phone;
@@ -92,7 +100,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
 
     private void doLogic() {
         String phone = et_phone.getText().toString();
-        if (StringUtils.isEmpty(phone)||!StringUtils.isPhone(phone)) {
+        if (StringUtils.isEmpty(phone) || !StringUtils.isPhone(phone)) {
             toast("请输入正确的手机号");
             return;
         }
@@ -102,7 +110,21 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
             toast("密码需在6-20位之间");
             return;
         }
-        intentActivity(HomePagerActivity.class);
+
+        MainApplication.http.login(phone, password, new UserCallBack() {
+            @Override
+            public void onError(Call call, Exception e, int id) {
+
+            }
+
+            @Override
+            public void onResponse(User response, int id) {
+                if (null != response) {
+                    intentActivity(HomePagerActivity.class);
+                }
+            }
+        });
+
     }
 
     @Override

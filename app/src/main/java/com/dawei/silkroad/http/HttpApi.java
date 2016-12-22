@@ -1,13 +1,14 @@
 package com.dawei.silkroad.http;
 
-/**
- * Created by yuanbaojun on 2016/12/19.
- */
 
 public class HttpApi {
-    public static final String BASE_URL = "http://www.6bshop.com/store/";
-//    public static final String BASE_URL = "http://121.40.204.177:9099/store/";
-
-    /** 登陆  */
-    public static final String LOGIN = BASE_URL + "userAction/login_account";
+    public static final String BASE_URL = "http://192.168.3.107:8093/appInter/";
+    //短信验证
+    public static final String SMS = BASE_URL + "userAction/getPsmsSend";
+    //注册
+//    public static final String REGISTER = BASE_URL + "userAction/userRegister?account=ceshi001&password=123456";
+    //登陆
+    public static final String LOGIN = BASE_URL + "userAction/loginUser";
+    //
+    public static final String register = BASE_URL + "userAction/userRegister";
 }

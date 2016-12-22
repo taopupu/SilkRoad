@@ -136,7 +136,7 @@
     <string name="exhibition">展示</string>
     <string name="filter">过滤</string>
     <string name="detail">详情</string>
-    <string name="request_fail">请求失败</string>
+    <string name="request_fail">解析失败</string>
     <string name="all">全部</string>
     <string name="waiting_payment">待付款</string>
     <string name="waiting_delivery">待发货</string>
