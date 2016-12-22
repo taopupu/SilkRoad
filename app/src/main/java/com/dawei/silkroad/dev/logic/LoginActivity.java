@@ -120,7 +120,12 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
             @Override
             public void onResponse(User response, int id) {
                 if (null != response) {
+                    user.id = response.id;
+                    user.account = response.account;
+                    user.flag = true;
+                    user.save();
                     intentActivity(HomePagerActivity.class);
+                    finish();
                 }
             }
         });

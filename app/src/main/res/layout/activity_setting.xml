@@ -50,6 +50,26 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/rv_change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            style="@style/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/change_pwd" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#CCCCCC" />
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="45dp">
 
@@ -117,6 +137,26 @@
             android:layout_marginLeft="20dp"
             android:gravity="center_vertical"
             android:text="@string/about_us" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#CCCCCC" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            style="@style/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/sign_out" />
 
         <View
             android:layout_width="fill_parent"

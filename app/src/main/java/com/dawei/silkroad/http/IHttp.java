@@ -10,4 +10,6 @@ public interface IHttp {
     void sms(String phoneNumber, Callback callback);
 
     void register(String phoneNumber, String password, String smsCode, Callback callback);
+
+    void changePwd(int id, String oldPwd, String newPwd, String RePwd, Callback callback);
 }

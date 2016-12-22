@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 
+import com.dawei.silkroad.dev.user.bean.User;
 import com.dawei.silkroad.http.HttpImple;
 import com.dawei.silkroad.http.IHttp;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
@@ -22,6 +23,7 @@ public class MainApplication extends Application {
     private List<Activity> list = new LinkedList<>();
     public static IHttp http;
     public static DisplayImageOptions baseImageOptions;
+    public static User user;
 
     @Override
     public void onCreate() {
@@ -30,11 +32,15 @@ public class MainApplication extends Application {
         http = new HttpImple();
         initImageLoader(this);
         initImageOptions();
+        user = new User(getApplicationContext());
+        user.load();
+        user.save();
     }
 
     public void addActivity(Activity activity) {
         list.add(activity);
     }
+
     private void initImageLoader(Context context) {
         ImageLoaderConfiguration.Builder config = new ImageLoaderConfiguration.Builder(context);
         config.threadPriority(Thread.NORM_PRIORITY - 2);
@@ -47,7 +53,8 @@ public class MainApplication extends Application {
         // Initialize ImageLoader with configuration.
         ImageLoader.getInstance().init(config.build());
     }
-    private void initImageOptions(){
+
+    private void initImageOptions() {
         baseImageOptions = new DisplayImageOptions.Builder()
                 .showImageOnLoading(R.mipmap.ic_launcher)
                 .showImageForEmptyUri(R.mipmap.ic_launcher)
@@ -69,6 +76,16 @@ public class MainApplication extends Application {
             e.printStackTrace();
         } finally {
             System.exit(0);
+        }
+    }
+
+    public void killBefore() {
+        try {
+            for (int i = 0; i < list.size() - 1; i++) {
+                list.get(i).finish();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

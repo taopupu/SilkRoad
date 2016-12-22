@@ -13,6 +13,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
 
+import com.dawei.silkroad.dev.user.bean.User;
 import com.dawei.silkroad.util.LoadProgress;
 import com.dawei.silkroad.MainApplication;
 import com.dawei.silkroad.R;
@@ -24,6 +25,7 @@ public class BaseActivity extends FragmentActivity {
     private static Boolean isExit = false;
     public static int screenWidth = 480;
     public static int screenHeight = 800;
+    public User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class BaseActivity extends FragmentActivity {
         progress = LoadProgress.createDialog(this);
         MainApplication.application.addActivity(this);
         setSystemBarColor(getResources().getColor(R.color.colorMain));
+        user = MainApplication.user;
     }
 
     public <T extends View> T get(int id) {

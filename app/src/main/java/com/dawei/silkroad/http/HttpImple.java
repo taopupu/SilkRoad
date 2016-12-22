@@ -16,7 +16,8 @@ public class HttpImple extends HttpApi implements IHttp {
 
     @Override
     public void login(String name, String password, Callback callback) {
-        OkHttpUtils.get().url(HttpApi.LOGIN).addParams("account", name).addParams("password", password).build().execute(callback);
+        OkHttpUtils.get().url(HttpApi.LOGIN).addParams("account", name)
+                .addParams("password", password).build().execute(callback);
     }
 
     @Override
@@ -26,8 +27,14 @@ public class HttpImple extends HttpApi implements IHttp {
 
     @Override
     public void register(String phoneNumber, String password, String smsCode, Callback callback) {
-        OkHttpUtils.get().url(HttpApi.register).addParams("account", phoneNumber).addParams("password", password).addParams("smsCode", smsCode)
-                .build().execute(callback);
+        OkHttpUtils.get().url(HttpApi.register).addParams("account", phoneNumber)
+                .addParams("password", password).addParams("smsCode", smsCode).build().execute(callback);
+    }
+
+    @Override
+    public void changePwd(int id, String oldPwd, String newPwd, String rePwd, Callback callback) {
+        OkHttpUtils.get().url(HttpApi.CHANGE_PWD).addParams("id", id + "").addParams("passWords", oldPwd)
+                .addParams("newPassWords", newPwd).addParams("newRePassWords", rePwd).build().execute(callback);
     }
 
 

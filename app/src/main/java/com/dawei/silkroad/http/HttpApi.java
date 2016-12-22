@@ -11,4 +11,5 @@ public class HttpApi {
     public static final String LOGIN = BASE_URL + "userAction/loginUser";
     //
     public static final String register = BASE_URL + "userAction/userRegister";
+    public static final String CHANGE_PWD = BASE_URL+"userAction/updateUserPassWords";
 }
