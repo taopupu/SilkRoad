@@ -179,6 +179,9 @@
     <string name="working_days_weekends_and_holidays_can_delivery">工作日、双休日与节假日均可送货</string>
     <string name="no_invoice">不开发票</string>
     <string name="defaults">默认</string>
+    <string name="Top_selling">热销排行</string>
+    <string name="find_more">发现更多</string>
+    <string name="current_recommendation">本期推荐</string>
     <string-array name="sp_native_place">
         <item>北京</item>
         <item>陕西</item>
