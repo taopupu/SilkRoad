@@ -114,21 +114,40 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
             toast("请输入验证码");
             return;
         }
-        MainApplication.http.register(phone, pwd1, code, new HttpCallBack() {
-            @Override
-            public void onError(Call call, Exception e, int id) {
-                Log.d("----", "not request");
-            }
-
-            @Override
-            public void onResponse(HttpData response, int id) {
-                toast(response.info);
-                if (response.flag){
-                    intentActivity(LoginActivity.class);
-                    finish();
+        if (flag) {
+            MainApplication.http.register(phone, pwd1, code, new HttpCallBack() {
+                @Override
+                public void onError(Call call, Exception e, int id) {
+                    Log.d("----", "not request");
                 }
-            }
-        });
+
+                @Override
+                public void onResponse(HttpData response, int id) {
+                    toast(response.info);
+                    if (response.flag) {
+                        intentActivity(LoginActivity.class);
+                        finish();
+                    }
+                }
+            });
+        } else {
+            MainApplication.http.forgetPwd(phone, pwd1, code, new HttpCallBack() {
+                @Override
+                public void onError(Call call, Exception e, int id) {
+
+                }
+
+                @Override
+                public void onResponse(HttpData response, int id) {
+                    toast(response.info);
+                    if (response.flag) {
+                        intentActivity(LoginActivity.class);
+                        finish();
+                    }
+                }
+            });
+        }
+
     }
 
 

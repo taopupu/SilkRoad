@@ -58,7 +58,16 @@ public class PreferencesUtil {
             mEditor.putFloat(field.getName(), field.getFloat(o));
         }
     }
-
+    /**
+     * 清除数据
+     */
+    public static void clear(Object o, Context ctx) {
+        Class<?> classObject = o.getClass();
+        SharedPreferences mPreferences = getPreferences(classObject, ctx);
+        SharedPreferences.Editor edit = mPreferences.edit();
+        edit.clear();
+        edit.commit();
+    }
     /**
      * 载入数据
      */

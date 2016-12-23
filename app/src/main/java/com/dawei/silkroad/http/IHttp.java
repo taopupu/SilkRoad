@@ -12,4 +12,6 @@ public interface IHttp {
     void register(String phoneNumber, String password, String smsCode, Callback callback);
 
     void changePwd(int id, String oldPwd, String newPwd, String RePwd, Callback callback);
+
+    void forgetPwd(String phoneNumber, String password, String smsCode, Callback callback);
 }

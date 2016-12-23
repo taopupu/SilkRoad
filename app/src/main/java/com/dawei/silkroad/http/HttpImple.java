@@ -37,5 +37,11 @@ public class HttpImple extends HttpApi implements IHttp {
                 .addParams("newPassWords", newPwd).addParams("newRePassWords", rePwd).build().execute(callback);
     }
 
+    @Override
+    public void forgetPwd(String phoneNumber, String password, String smsCode, Callback callback) {
+        OkHttpUtils.get().url(HttpApi.forgetPwd).addParams("mobileNumber", phoneNumber)
+                .addParams("newPassWords", password).addParams("smsCode", smsCode).build().execute(callback);
+    }
+
 
 }

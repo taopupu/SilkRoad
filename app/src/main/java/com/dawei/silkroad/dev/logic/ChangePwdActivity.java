@@ -81,7 +81,6 @@ public class ChangePwdActivity extends BaseActivity implements View.OnClickListe
             @Override
             public void onResponse(HttpData response, int id) {
                 if (response.flag) {
-
                     finish();
                 }
             }

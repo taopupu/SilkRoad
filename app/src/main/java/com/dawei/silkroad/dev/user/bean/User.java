@@ -19,7 +19,12 @@ public class User {
     public void save() {
         PreferencesUtil.save(this, context);
     }
-    public void load(){
+
+    public void load() {
         PreferencesUtil.loadData(this, context);
+    }
+
+    public void clear() {
+        PreferencesUtil.clear(this, context);
     }
 }
