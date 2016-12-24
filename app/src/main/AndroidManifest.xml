@@ -7,8 +7,9 @@
     <application
         android:name=".MainApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -43,7 +44,8 @@
         <activity android:name=".dev.artists.ui.ArtistActivity" />
         <activity android:name=".TestActivity" />
         <activity android:name=".dev.store.ui.FirmOrderActivity" />
-        <activity android:name=".dev.order.ui.OrderActivity"></activity>
+        <activity android:name=".dev.order.ui.OrderActivity" />
+        <activity android:name=".dev.aboutUs.AboutUsActivity"></activity>
     </application>
 
 </manifest>

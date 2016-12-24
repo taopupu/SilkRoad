@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,19 +24,21 @@
             android:textColor="@color/colorDarkGray"
             android:textSize="20sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="7dp">
 
         <RelativeLayout
+            android:id="@+id/rl_product"
             android:layout_width="140dp"
             android:layout_height="140dp">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#dad7d7" />
+                android:src="@mipmap/production10" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -60,7 +63,8 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#dad7d7" />
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/production9" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -79,7 +83,8 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#dad7d7" />
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/production8" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -114,7 +119,8 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#dad7d7" />
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/production5" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -133,7 +139,8 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#dad7d7" />
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/production6" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -153,7 +160,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#dad7d7" />
+                android:src="@mipmap/production7" />
 
             <TextView
                 android:layout_width="wrap_content"

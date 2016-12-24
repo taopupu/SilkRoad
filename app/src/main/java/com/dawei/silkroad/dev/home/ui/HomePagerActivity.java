@@ -6,6 +6,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
@@ -14,13 +16,11 @@ import com.dawei.silkroad.dev.user.ui.MineFragment;
 /**
  * 主页面(首页、我的等)
  */
-public class HomePagerActivity extends BaseActivity implements View.OnClickListener {
+public class HomePagerActivity extends BaseActivity{
     private FragmentManager manager;
-//    private Fragment[] fragment;
     private HomePagerFragment f1;
     private MineFragment f2;
     private FragmentTransaction transaction;
-    private LinearLayout lin_home, lin_mine;
 
     private Fragment showFragment;
 
@@ -31,42 +31,28 @@ public class HomePagerActivity extends BaseActivity implements View.OnClickListe
         initView();
     }
 
-    private void buildFragmentView() {
+
+    private void initView() {
+
+        f1 = new HomePagerFragment();
+        f2 = new MineFragment();
         manager = getSupportFragmentManager();
         transaction = manager.beginTransaction();
-//        fragment = new Fragment[2];
-//        f1 = new HomePagerFragment();
-//        fragment[0] = f1;
-//        transaction.add(R.id.fg, fragment[0]);
-//        transaction.commit();
         showFragment = f1;
         transaction.add(R.id.fg, f1);
         transaction.commit();
-    }
+        ((RadioButton)get(R.id.lin_home)).setChecked(true);
 
-    private void initView() {
-        lin_home = (LinearLayout) findViewById(R.id.lin_home);
-        lin_mine = (LinearLayout) findViewById(R.id.lin_mine);
-        lin_mine.setOnClickListener(this);
-        lin_home.setOnClickListener(this);
-        f1 = new HomePagerFragment();
-        f2 = new MineFragment();
-        buildFragmentView();
-    }
-
-
-    @Override
-    public void onClick(View view) {
-        transaction = manager.beginTransaction();
-        switch (view.getId()) {
-            case R.id.lin_home:
-                switchContent(showFragment,f1,transaction,manager);
-                break;
-            case R.id.lin_mine:
-                switchContent(showFragment,f2,transaction,manager);
-                break;
-        }
-        transaction.commit();
+        ((RadioGroup)get(R.id.icon_group)).setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == R.id.lin_home){
+                    switchContent(showFragment,f1,transaction,manager);
+                }else {
+                    switchContent(showFragment,f2,transaction,manager);
+                }
+            }
+        });
     }
 
     public void switchContent(Fragment from, Fragment to,FragmentTransaction ft,

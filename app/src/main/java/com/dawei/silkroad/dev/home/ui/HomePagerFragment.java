@@ -67,9 +67,10 @@ public class HomePagerFragment extends Fragment implements View.OnClickListener 
         rv_content.setLayoutManager(new LinearLayoutManager(getActivity()));
         list = new ArrayList<>();
         content = new ArrayList<>();
-        list.add(R.mipmap.ic_launcher);
-        list.add(R.mipmap.ic_launcher);
-        list.add(R.mipmap.ic_launcher);
+        list.add(R.mipmap.production1);
+        list.add(R.mipmap.production2);
+        list.add(R.mipmap.production3);
+        list.add(R.mipmap.production4);
         content.add(1);
         content.add(2);
         View view1 = LayoutInflater.from(getActivity()).inflate(R.layout.item_header_view, null);

@@ -87,6 +87,9 @@ public class MallActivity extends BaseActivity implements View.OnClickListener {
     }
 
     private void init() {
+        TextView tv_title = get(R.id.tv_title);
+        tv_title.setText(getResources().getText(R.string.mall));
+        onBack(get(R.id.title_back));
         tab_mall = get(R.id.tab_mall_type);
         viewPager = get(R.id.vp_type);
         FragmentManager manager = getSupportFragmentManager();

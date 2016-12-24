@@ -11,6 +11,7 @@
         app:canLoop="true" />
 
     <LinearLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -26,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/mall" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -48,7 +49,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/artist" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -70,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/news" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -92,7 +93,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/paimai" />
 
             <TextView
                 android:layout_width="wrap_content"

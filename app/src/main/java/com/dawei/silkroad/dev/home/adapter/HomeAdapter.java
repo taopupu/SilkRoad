@@ -1,13 +1,16 @@
 package com.dawei.silkroad.dev.home.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 import com.dawei.silkroad.R;
+import com.dawei.silkroad.dev.store.ui.ProductDetailsActivity;
 
 import java.util.List;
 
@@ -35,6 +38,12 @@ public class HomeAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         if (list.get(position) == 1) {
             ShopHolder shopHolder = (ShopHolder) holder;
+            shopHolder.rv_product.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    context.startActivity(new Intent(context, ProductDetailsActivity.class));
+                }
+            });
         } else if (list.get(position) == 2) {
             ArtistHolder artistHolder = (ArtistHolder) holder;
             artistHolder.rv_artist.setLayoutManager(new GridLayoutManager(context, 3));
@@ -53,9 +62,11 @@ public class HomeAdapter extends RecyclerView.Adapter {
     }
 
     class ShopHolder extends RecyclerView.ViewHolder {
+        RelativeLayout rv_product;
 
         public ShopHolder(View itemView) {
             super(itemView);
+            rv_product = (RelativeLayout) itemView.findViewById(R.id.rl_product);
         }
     }
 
