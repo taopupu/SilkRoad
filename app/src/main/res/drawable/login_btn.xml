@@ -13,11 +13,11 @@
     <item>
         <shape>
             <!--<solid android:color="#ff9b58" />-->
-            <solid android:color="#ff6358" />
+            <solid android:color="#fa2a06" />
             <corners android:radius="5dp" />
             <stroke
 		        android:width="0.5dp"
-		        android:color="#ff6358" />
+		        android:color="#fa2a06" />
         </shape>
     </item>
 </selector>
