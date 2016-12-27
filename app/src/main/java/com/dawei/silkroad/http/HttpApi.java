@@ -13,5 +13,7 @@ public class HttpApi {
     public static final String CHANGE_PWD = BASE_URL + "userAction/updateUserPassWords";
     //忘记密码
     public static final String forgetPwd = BASE_URL + "userAction/forgetPwdSuc";
+    //收货地址
+    public static final String ReceiveAddress = BASE_URL+"myAddressAction/getMyAddressList";
 
 }

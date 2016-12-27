@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,9 +14,6 @@ import android.widget.TextView;
 import com.dawei.silkroad.MainApplication;
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
-import com.dawei.silkroad.callback.HttpCallBack;
-import com.dawei.silkroad.callback.HttpData;
-import com.dawei.silkroad.callback.UserCallBack;
 import com.dawei.silkroad.dev.home.ui.HomePagerActivity;
 import com.dawei.silkroad.dev.user.bean.User;
 import com.dawei.silkroad.util.StringUtils;
@@ -111,24 +107,24 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
             return;
         }
 
-        MainApplication.http.login(phone, password, new UserCallBack() {
-            @Override
-            public void onError(Call call, Exception e, int id) {
-
-            }
-
-            @Override
-            public void onResponse(User response, int id) {
-                if (null != response) {
-                    user.id = response.id;
-                    user.account = response.account;
-                    user.flag = true;
-                    user.save();
-                    intentActivity(HomePagerActivity.class);
-                    finish();
-                }
-            }
-        });
+//        MainApplication.http.login(phone, password, new UserCallBack() {
+//            @Override
+//            public void onError(Call call, Exception e, int id) {
+//
+//            }
+//
+//            @Override
+//            public void onResponse(User response, int id) {
+//                if (null != response) {
+//                    user.id = response.id;
+//                    user.account = response.account;
+//                    user.flag = true;
+//                    user.save();
+//                    intentActivity(HomePagerActivity.class);
+//                    finish();
+//                }
+//            }
+//        });
 
     }
 

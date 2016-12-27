@@ -48,7 +48,8 @@
         <activity android:name=".dev.aboutUs.AboutUsActivity" />
         <activity android:name=".dev.shops.ui.ShopHomeActivity" />
         <activity android:name=".dev.shops.ui.OpenShopActivity" />
-        <activity android:name=".dev.address.ui.AddNewAddressActivity"></activity>
+        <activity android:name=".dev.address.ui.AddNewAddressActivity" />
+        <activity android:name=".dev.store.ui.GoodsListActivity"></activity>
     </application>
 
 </manifest>

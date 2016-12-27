@@ -86,12 +86,21 @@
 
         <TextView
             style="@style/textView"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
             android:gravity="center_vertical"
             android:text="@string/clear_cache" />
 
+        <TextView
+            android:id="@+id/tv_cache"
+            style="@style/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:text="0M" />
     </RelativeLayout>
 
     <RelativeLayout

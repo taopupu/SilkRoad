@@ -16,10 +16,6 @@ import com.jcodecraeer.xrecyclerview.XRecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by yuanbaojun on 2016/12/20.
- */
-
 public class OrderListFragment extends Fragment{
     int state;
     View view;

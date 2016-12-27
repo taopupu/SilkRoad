@@ -41,6 +41,7 @@
                     android:textSize="18sp" />
 
                 <LinearLayout
+                    android:id="@+id/view_more"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right|center_vertical">
@@ -80,11 +81,11 @@
 
                     <TextView
                         style="@style/textView"
-                        android:layout_margin="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/colorWhite"
-                        android:text="潮涌纸本水墨" />
+                        android:layout_margin="15dp"
+                        android:text="潮涌纸本水墨"
+                        android:textColor="@color/colorWhite" />
                 </RelativeLayout>
 
 
@@ -99,8 +100,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:layout_marginBottom="5dp">
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1">
 
                         <ImageView
                             android:layout_width="match_parent"
@@ -110,11 +111,11 @@
 
                         <TextView
                             style="@style/textView"
-                            android:layout_margin="7dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/colorWhite"
-                            android:text="清霜纸本水墨" />
+                            android:layout_margin="7dp"
+                            android:text="清霜纸本水墨"
+                            android:textColor="@color/colorWhite" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -130,11 +131,11 @@
 
                         <TextView
                             style="@style/textView"
-                            android:layout_margin="7dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/colorWhite"
-                            android:text="霜凝万壑丹纸本水墨" />
+                            android:layout_margin="7dp"
+                            android:text="霜凝万壑丹纸本水墨"
+                            android:textColor="@color/colorWhite" />
                     </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -161,6 +162,7 @@
                     android:textSize="18sp" />
 
                 <LinearLayout
+                    android:id="@+id/view2_more"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right|center_vertical">
@@ -199,11 +201,11 @@
 
                     <TextView
                         style="@style/textView"
-                        android:layout_margin="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/colorWhite"
-                        android:text="潮涌纸本水墨" />
+                        android:layout_margin="15dp"
+                        android:text="潮涌纸本水墨"
+                        android:textColor="@color/colorWhite" />
                 </RelativeLayout>
 
                 <LinearLayout
@@ -216,8 +218,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:layout_marginBottom="5dp">
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1">
 
                         <ImageView
                             android:layout_width="match_parent"
@@ -227,11 +229,11 @@
 
                         <TextView
                             style="@style/textView"
-                            android:layout_margin="7dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/colorWhite"
-                            android:text="清霜纸本水墨" />
+                            android:layout_margin="7dp"
+                            android:text="清霜纸本水墨"
+                            android:textColor="@color/colorWhite" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -247,11 +249,11 @@
 
                         <TextView
                             style="@style/textView"
-                            android:layout_margin="7dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/colorWhite"
-                            android:text="霜凝万壑丹纸本水墨" />
+                            android:layout_margin="7dp"
+                            android:text="霜凝万壑丹纸本水墨"
+                            android:textColor="@color/colorWhite" />
                     </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -268,11 +270,12 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:orientation="vertical">
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:layout_marginBottom="5dp">
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1">
 
                         <ImageView
                             android:layout_width="match_parent"
@@ -282,11 +285,11 @@
 
                         <TextView
                             style="@style/textView"
-                            android:layout_margin="7dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/colorWhite"
-                            android:text="清霜纸本水墨" />
+                            android:layout_margin="7dp"
+                            android:text="清霜纸本水墨"
+                            android:textColor="@color/colorWhite" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -302,11 +305,11 @@
 
                         <TextView
                             style="@style/textView"
-                            android:layout_margin="7dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/colorWhite"
-                            android:text="霜凝万壑丹纸本水墨" />
+                            android:layout_margin="7dp"
+                            android:text="霜凝万壑丹纸本水墨"
+                            android:textColor="@color/colorWhite" />
                     </RelativeLayout>
                 </LinearLayout>
 
@@ -323,11 +326,11 @@
 
                     <TextView
                         style="@style/textView"
-                        android:layout_margin="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/colorWhite"
-                        android:text="潮涌纸本水墨" />
+                        android:layout_margin="15dp"
+                        android:text="潮涌纸本水墨"
+                        android:textColor="@color/colorWhite" />
                 </RelativeLayout>
 
 
@@ -355,6 +358,7 @@
                     android:textSize="18sp" />
 
                 <LinearLayout
+                    android:id="@+id/view3_more"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
@@ -394,11 +398,11 @@
 
                     <TextView
                         style="@style/textView"
-                        android:layout_margin="15dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/colorWhite"
-                        android:text="潮涌纸本水墨" />
+                        android:layout_margin="15dp"
+                        android:text="潮涌纸本水墨"
+                        android:textColor="@color/colorWhite" />
                 </RelativeLayout>
 
                 <LinearLayout
@@ -411,8 +415,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:layout_marginBottom="5dp">
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1">
 
                         <ImageView
                             android:layout_width="match_parent"
@@ -422,11 +426,11 @@
 
                         <TextView
                             style="@style/textView"
-                            android:layout_margin="7dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/colorWhite"
-                            android:text="清霜纸本水墨" />
+                            android:layout_margin="7dp"
+                            android:text="清霜纸本水墨"
+                            android:textColor="@color/colorWhite" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -442,11 +446,11 @@
 
                         <TextView
                             style="@style/textView"
-                            android:layout_margin="7dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/colorWhite"
-                            android:text="霜凝万壑丹纸本水墨" />
+                            android:layout_margin="7dp"
+                            android:text="霜凝万壑丹纸本水墨"
+                            android:textColor="@color/colorWhite" />
                     </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>

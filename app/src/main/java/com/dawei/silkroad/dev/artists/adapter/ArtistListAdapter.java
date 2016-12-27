@@ -10,9 +10,6 @@ import android.widget.LinearLayout;
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
 
-/**
- * Created by 56890 on 2016/12/26.
- */
 
 public class ArtistListAdapter extends RecyclerView.Adapter<ArtistListAdapter.MyHolder> {
     @Override
@@ -22,7 +19,7 @@ public class ArtistListAdapter extends RecyclerView.Adapter<ArtistListAdapter.My
 
     @Override
     public void onBindViewHolder(MyHolder holder, int position) {
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams((BaseActivity.screenWidth / 3) - 30, BaseActivity.screenWidth / 3 - 30);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams((BaseActivity.screenWidth / 3) - 60, BaseActivity.screenWidth / 3 - 60);
         holder.img_header.setLayoutParams(params);
     }
 

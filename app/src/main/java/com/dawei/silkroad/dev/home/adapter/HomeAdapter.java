@@ -13,17 +13,24 @@ import android.widget.RelativeLayout;
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.dev.artists.ui.ArtistActivity;
 import com.dawei.silkroad.dev.store.ui.ProductDetailsActivity;
+import com.sunfusheng.marqueeview.MarqueeView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HomeAdapter extends RecyclerView.Adapter {
 
     List<Integer> list;
     Context context;
+    List<String> mv_list;
 
     public HomeAdapter(List<Integer> list, Context context) {
         this.list = list;
         this.context = context;
+        mv_list = new ArrayList<>();
+        mv_list.add("丝路汇平台是西安国家级对外文化贸易基地");
+        mv_list.add("全国文化产品跨境电商综合试点项目");
+
     }
 
     @Override
@@ -46,6 +53,7 @@ public class HomeAdapter extends RecyclerView.Adapter {
                     context.startActivity(new Intent(context, ProductDetailsActivity.class));
                 }
             });
+            shopHolder.marqueeView.startWithList(mv_list);
         } else if (list.get(position) == 2) {
             ArtistHolder artistHolder = (ArtistHolder) holder;
             artistHolder.rv_artist.setLayoutManager(new GridLayoutManager(context, 3));
@@ -71,10 +79,12 @@ public class HomeAdapter extends RecyclerView.Adapter {
 
     class ShopHolder extends RecyclerView.ViewHolder {
         RelativeLayout rv_product;
+        MarqueeView marqueeView;
 
         public ShopHolder(View itemView) {
             super(itemView);
             rv_product = (RelativeLayout) itemView.findViewById(R.id.rl_product);
+            marqueeView = (MarqueeView) itemView.findViewById(R.id.marqueeView);
         }
     }
 

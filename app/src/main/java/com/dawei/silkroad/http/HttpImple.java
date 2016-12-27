@@ -43,5 +43,10 @@ public class HttpImple extends HttpApi implements IHttp {
                 .addParams("newPassWords", password).addParams("smsCode", smsCode).build().execute(callback);
     }
 
+    @Override
+    public void receiveAddress(String uid, Callback callback) {
+        OkHttpUtils.get().url(HttpApi.ReceiveAddress).addParams("userId", uid).build().execute(callback);
+    }
+
 
 }

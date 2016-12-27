@@ -14,4 +14,6 @@ public interface IHttp {
     void changePwd(int id, String oldPwd, String newPwd, String RePwd, Callback callback);
 
     void forgetPwd(String phoneNumber, String password, String smsCode, Callback callback);
+
+    void receiveAddress(String uid, Callback callback);
 }
