@@ -28,7 +28,7 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
 
-public class StoreActivity extends BaseActivity implements View.OnClickListener {
+public class StoreInformationActivity extends BaseActivity implements View.OnClickListener {
     private EditText et_date, et_store_name, detaile_place, linkman, contact_number, et_abstract;
     private Spinner sp_native_place;
     private Button btn_next, btn_commit;

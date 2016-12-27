@@ -1,5 +1,7 @@
 package com.dawei.silkroad.dev.setting;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -9,7 +11,6 @@ import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
 import com.dawei.silkroad.dev.aboutUs.AboutUsActivity;
 import com.dawei.silkroad.dev.address.ui.AddressActivity;
-import com.dawei.silkroad.dev.home.ui.HomePagerActivity;
 import com.dawei.silkroad.dev.logic.ChangePwdActivity;
 
 public class SettingActivity extends BaseActivity implements View.OnClickListener {
@@ -29,6 +30,7 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
         get(R.id.rv_change_pwd).setOnClickListener(this);
         get(R.id.sign_out).setOnClickListener(this);
         get(R.id.about_us).setOnClickListener(this);
+        get(R.id.clean).setOnClickListener(this);
     }
 
     @Override
@@ -43,14 +45,19 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
             case R.id.about_us:
                 intentActivity(AboutUsActivity.class);
                 break;
+            case R.id.clean:
+                init();
+                break;
             case R.id.sign_out:
-                user.flag=false;
-                user.id=0;
+                user.flag = false;
+                user.id = 0;
                 user.save();
                 MainApplication.application.killBefore();
-                intentActivity(HomePagerActivity.class);
                 finish();
                 break;
         }
+    }
+
+    private void init() {
     }
 }

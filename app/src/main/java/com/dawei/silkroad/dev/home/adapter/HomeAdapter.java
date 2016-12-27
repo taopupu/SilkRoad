@@ -7,9 +7,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.dawei.silkroad.R;
+import com.dawei.silkroad.dev.artists.ui.ArtistActivity;
 import com.dawei.silkroad.dev.store.ui.ProductDetailsActivity;
 
 import java.util.List;
@@ -48,6 +50,12 @@ public class HomeAdapter extends RecyclerView.Adapter {
             ArtistHolder artistHolder = (ArtistHolder) holder;
             artistHolder.rv_artist.setLayoutManager(new GridLayoutManager(context, 3));
             artistHolder.rv_artist.setAdapter(new ArtistAdapter(context));
+            artistHolder.lin_more.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    context.startActivity(new Intent(context, ArtistActivity.class));
+                }
+            });
         }
     }
 
@@ -72,10 +80,12 @@ public class HomeAdapter extends RecyclerView.Adapter {
 
     class ArtistHolder extends RecyclerView.ViewHolder {
         RecyclerView rv_artist;
+        LinearLayout lin_more;
 
         public ArtistHolder(View itemView) {
             super(itemView);
             rv_artist = (RecyclerView) itemView.findViewById(R.id.rv_artist);
+            lin_more = (LinearLayout) itemView.findViewById(R.id.view_more);
         }
     }
 }

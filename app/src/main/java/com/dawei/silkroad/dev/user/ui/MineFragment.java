@@ -11,13 +11,15 @@ import android.widget.TextView;
 
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.dev.artists.ui.ArtistDataActivity;
+import com.dawei.silkroad.dev.artists.ui.ArtistOfficialActivity;
 import com.dawei.silkroad.dev.cooperative.CooperationOpportunityActivity;
 import com.dawei.silkroad.dev.cooperative.CooperativeActivity;
 import com.dawei.silkroad.dev.cooperative.CooperativeStoreActivity;
 import com.dawei.silkroad.dev.message.MessageActivity;
 import com.dawei.silkroad.dev.order.ui.OrderActivity;
 import com.dawei.silkroad.dev.setting.SettingActivity;
-import com.dawei.silkroad.dev.store.ui.StoreActivity;
+import com.dawei.silkroad.dev.shops.ui.OpenShopActivity;
+import com.dawei.silkroad.dev.store.ui.StoreInformationActivity;
 import com.dawei.silkroad.dev.logic.LoginActivity;
 
 public class MineFragment extends Fragment implements View.OnClickListener {
@@ -64,6 +66,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         view.findViewById(R.id.btn_cooperative_store).setOnClickListener(this);
         view.findViewById(R.id.lin_login).setOnClickListener(this);
         view.findViewById(R.id.coo_opportunity).setOnClickListener(this);
+        view.findViewById(R.id.art_official).setOnClickListener(this);
     }
 
     @Override
@@ -79,7 +82,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(getContext(), ArtistDataActivity.class));
                 break;
             case R.id.open_store:
-                startActivity(new Intent(getContext(), StoreActivity.class));
+                startActivity(new Intent(getContext(), OpenShopActivity.class));
                 break;
             case R.id.cooperative_artist:
                 startActivity(new Intent(getContext(), CooperativeActivity.class));
@@ -95,6 +98,9 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.btn_order:
                 startActivity(new Intent(getContext(), OrderActivity.class));
+                break;
+            case R.id.art_official:
+                startActivity(new Intent(getContext(), ArtistOfficialActivity.class));
                 break;
         }
     }

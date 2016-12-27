@@ -2,57 +2,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
+    android:background="#fafafa"
     android:orientation="vertical"
     tools:context="com.dawei.silkroad.dev.user.ui.MineFragment">
 
     <include layout="@layout/common_title"></include>
 
-    <LinearLayout
-        android:id="@+id/lin_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center_vertical">
-
-        <com.dawei.silkroad.util.CircleImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:src="@mipmap/logo" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="昵称" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="用户等级" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <include layout="@layout/layout_line"></include>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical">
+
+                <com.dawei.silkroad.util.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="昵称" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用户等级" />
+                </LinearLayout>
+            </LinearLayout>
+
+
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite">
 
                 <TextView
                     style="@style/textView"
@@ -62,17 +65,14 @@
                     android:gravity="center_vertical"
                     android:text="@string/language_setting" />
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
             </RelativeLayout>
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite">
 
                 <TextView
                     android:id="@+id/btn_order"
@@ -83,17 +83,14 @@
                     android:gravity="center_vertical"
                     android:text="@string/my_order" />
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
             </RelativeLayout>
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -129,17 +126,15 @@
                         android:text="@string/not_through" />
                 </LinearLayout>
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
             </RelativeLayout>
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="38dp">
+                android:layout_height="38dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite">
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -174,17 +169,14 @@
                         android:text="@string/not_through" />
                 </LinearLayout>
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
             </RelativeLayout>
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
                 android:visibility="gone">
 
                 <TextView
@@ -194,18 +186,14 @@
                     android:layout_marginLeft="20dp"
                     android:gravity="center_vertical"
                     android:text="@string/shop_home" />
-
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
             </RelativeLayout>
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
                 android:visibility="gone">
 
                 <TextView
@@ -216,18 +204,16 @@
                     android:gravity="center_vertical"
                     android:text="@string/store_basic_information" />
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
             </RelativeLayout>
 
 
             <RelativeLayout
                 android:id="@+id/coo_opportunity"
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
+                android:visibility="gone">
 
                 <TextView
                     style="@style/textView"
@@ -237,17 +223,15 @@
                     android:gravity="center_vertical"
                     android:text="@string/cooperation_opportunities" />
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
             </RelativeLayout>
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/cooperative_artist"
@@ -258,17 +242,14 @@
                     android:gravity="center_vertical"
                     android:text="@string/cooperative_artist_directory" />
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
             </RelativeLayout>
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
                 android:visibility="gone">
 
                 <TextView
@@ -279,17 +260,14 @@
                     android:gravity="center_vertical"
                     android:text="@string/modify_store_information" />
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
             </RelativeLayout>
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
                 android:visibility="gone">
 
                 <TextView
@@ -300,17 +278,14 @@
                     android:gravity="center_vertical"
                     android:text="@string/upgrade_shop" />
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
             </RelativeLayout>
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
                 android:visibility="gone">
 
                 <TextView
@@ -320,18 +295,14 @@
                     android:layout_marginLeft="20dp"
                     android:gravity="center_vertical"
                     android:text="@string/cooperation_process" />
-
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
             </RelativeLayout>
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
                 android:visibility="gone">
 
                 <TextView
@@ -342,16 +313,14 @@
                     android:gravity="center_vertical"
                     android:text="@string/an_artist" />
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/art_official"
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite">
 
                 <TextView
                     style="@style/textView"
@@ -361,16 +330,15 @@
                     android:gravity="center_vertical"
                     android:text="@string/artist_official_website" />
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
+
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite">
+
 
                 <TextView
                     style="@style/textView"
@@ -380,16 +348,16 @@
                     android:gravity="center_vertical"
                     android:text="@string/basic_artist_information" />
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
+
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
+                android:visibility="gone">
+
 
                 <TextView
                     android:id="@+id/btn_cooperative_store"
@@ -400,16 +368,15 @@
                     android:gravity="center_vertical"
                     android:text="@string/cooperative_store_directory" />
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
+
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/btn_auction"
@@ -420,16 +387,13 @@
                     android:gravity="center_vertical"
                     android:text="@string/my_auction" />
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="45dp">
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite">
 
                 <TextView
                     android:id="@+id/btn_messages"
@@ -440,17 +404,8 @@
                     android:gravity="center_vertical"
                     android:text="@string/my_news" />
 
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="#CCCCCC" />
             </RelativeLayout>
-
-
 
         </LinearLayout>
     </ScrollView>
-
-
 </LinearLayout>

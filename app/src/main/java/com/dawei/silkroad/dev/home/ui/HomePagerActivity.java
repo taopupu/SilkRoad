@@ -21,7 +21,6 @@ public class HomePagerActivity extends BaseActivity{
     private HomePagerFragment f1;
     private MineFragment f2;
     private FragmentTransaction transaction;
-
     private Fragment showFragment;
 
     @Override

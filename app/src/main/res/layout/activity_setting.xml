@@ -12,7 +12,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp">
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff">
 
         <TextView
             style="@style/textView"
@@ -22,16 +24,13 @@
             android:gravity="center_vertical"
             android:text="是否开启和关闭消息" />
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="0.5dp"
-            android:layout_alignParentBottom="true"
-            android:background="#CCCCCC" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp">
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff">
 
         <TextView
             android:id="@+id/address_manage"
@@ -42,17 +41,15 @@
             android:gravity="center_vertical"
             android:text="@string/receipt_address_management" />
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="0.5dp"
-            android:layout_alignParentBottom="true"
-            android:background="#CCCCCC" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/rv_change_pwd"
         android:layout_width="match_parent"
-        android:layout_height="45dp">
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:visibility="gone">
 
         <TextView
             style="@style/textView"
@@ -61,17 +58,14 @@
             android:layout_marginLeft="20dp"
             android:gravity="center_vertical"
             android:text="@string/change_pwd" />
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="0.5dp"
-            android:layout_alignParentBottom="true"
-            android:background="#CCCCCC" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp">
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:visibility="gone">
 
         <TextView
             style="@style/textView"
@@ -81,16 +75,14 @@
             android:gravity="center_vertical"
             android:text="@string/direction_for_use" />
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="0.5dp"
-            android:layout_alignParentBottom="true"
-            android:background="#CCCCCC" />
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/clean"
         android:layout_width="match_parent"
-        android:layout_height="45dp">
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff">
 
         <TextView
             style="@style/textView"
@@ -100,16 +92,13 @@
             android:gravity="center_vertical"
             android:text="@string/clear_cache" />
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="0.5dp"
-            android:layout_alignParentBottom="true"
-            android:background="#CCCCCC" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp">
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff">
 
         <TextView
             style="@style/textView"
@@ -118,18 +107,14 @@
             android:layout_marginLeft="20dp"
             android:gravity="center_vertical"
             android:text="@string/check_for_updates" />
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="0.5dp"
-            android:layout_alignParentBottom="true"
-            android:background="#CCCCCC" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/about_us"
         android:layout_width="match_parent"
-        android:layout_height="45dp">
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff">
 
         <TextView
             style="@style/textView"
@@ -139,17 +124,15 @@
             android:gravity="center_vertical"
             android:text="@string/about_us" />
 
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="0.5dp"
-            android:layout_alignParentBottom="true"
-            android:background="#CCCCCC" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/sign_out"
         android:layout_width="match_parent"
-        android:layout_height="45dp">
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:visibility="gone">
 
         <TextView
             style="@style/textView"
@@ -158,11 +141,5 @@
             android:layout_marginLeft="20dp"
             android:gravity="center_vertical"
             android:text="@string/sign_out" />
-
-        <View
-            android:layout_width="fill_parent"
-            android:layout_height="0.5dp"
-            android:layout_alignParentBottom="true"
-            android:background="#CCCCCC" />
     </RelativeLayout>
 </LinearLayout>

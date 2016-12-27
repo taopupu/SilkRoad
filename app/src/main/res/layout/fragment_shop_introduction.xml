@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context="com.dawei.silkroad.dev.shops.ui.ShopIntroductionFragment">
+
+    <TextView
+        style="@style/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="店铺名称：" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            style="@style/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店铺logo：" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#bcb9b9" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="成立时间：" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            style="@style/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简介：" />
+
+        <TextView
+            style="@style/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="水电费建设大街法律手段快放假了圣诞节开发商垫付老师讲法律的快速分解落实到地方开始了对方快乐圣诞节放假的飞机上看到飞机速度快放假快放假快乐圣诞节福利时间放假圣诞快乐飞机失联的看法就是打飞机" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="签约艺术家：" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_art"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

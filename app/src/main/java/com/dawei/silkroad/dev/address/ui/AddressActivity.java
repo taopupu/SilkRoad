@@ -50,7 +50,7 @@ public class AddressActivity extends BaseActivity implements View.OnClickListene
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.rl_add:
-                intentActivity(AddressManagerActivity.class);
+                intentActivity(AddNewAddressActivity.class);
 //                aa();
                 break;
             case R.id.title_back:

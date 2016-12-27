@@ -161,7 +161,7 @@
     <string name="use_scenario">使用场景：%s</string>
     <string name="buy_online">在线购买</string>
     <string name="join_a_shopping_cart">加入购物车</string>
-    <string name="more_details">更多详情:%s</string>
+    <string name="more_details">更多详情</string>
     <string name="product_parameters">产品参数:%s</string>
     <string name="technique">技法:%s</string>
     <string name="theme">题材:%s</string>
@@ -183,7 +183,19 @@
     <string name="defaults">默认</string>
     <string name="Top_selling">热销排行</string>
     <string name="find_more">发现更多</string>
+    <string name="shop_introduction">店铺介绍</string>
+    <string name="recommended_works">推荐作品</string>
     <string name="current_recommendation">本期推荐</string>
+    <string name="open_preface">开通前言</string>
+    <string name="shouhuo">收货人：</string>
+    <string name="phonenumber">联系电话：</string>
+    <string name="sozaidiqu">所在地区：</string>
+    <string name="jiedao">街道：</string>
+    <string name="xiangxidizhi">详细地址：</string>
+    <string name="shouhuoplease"> 请输入收货人地址</string>
+    <string name="phonenamberplease">请输入联系电话</string>
+    <string name="choice">请选择</string>
+    <string name="add_new_address">添加新地址</string>
     <string-array name="sp_native_place">
         <item>北京</item>
         <item>陕西</item>

@@ -10,9 +10,6 @@ import com.dawei.silkroad.R;
 
 import java.util.List;
 
-/**
- * Created by yuanbaojun on 2016/12/17.
- */
 
 public class MessageAdapter extends RecyclerView.Adapter {
 
@@ -26,8 +23,8 @@ public class MessageAdapter extends RecyclerView.Adapter {
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         if (context == null ) context = parent.getContext();
-        if (viewType == 1) return new Message1ViewHolder(LayoutInflater.from(context).inflate(R.layout.item_message_add_friends,parent,false));
-        return new Message2ViewHolder(LayoutInflater.from(context).inflate(R.layout.item_message_audit,parent,false));
+         return new Message1ViewHolder(LayoutInflater.from(context).inflate(R.layout.item_message_add_friends,parent,false));
+//        return new Message2ViewHolder(LayoutInflater.from(context).inflate(R.layout.item_message_audit,parent,false));
     }
 
     @Override

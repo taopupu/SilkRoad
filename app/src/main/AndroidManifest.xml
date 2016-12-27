@@ -27,7 +27,7 @@
         <activity android:name=".dev.logic.ChangePwdActivity" />
         <activity android:name=".dev.user.ui.PersonalCenterActivity" />
         <activity android:name=".dev.artists.ui.ArtistDataActivity" />
-        <activity android:name=".dev.store.ui.StoreActivity" />
+        <activity android:name=".dev.store.ui.StoreInformationActivity" />
         <activity android:name=".dev.cooperative.CooperativeActivity" />
         <activity android:name=".dev.address.ui.AddressActivity" />
         <activity android:name=".dev.address.ui.AddressManagerActivity" />
@@ -45,7 +45,10 @@
         <activity android:name=".TestActivity" />
         <activity android:name=".dev.store.ui.FirmOrderActivity" />
         <activity android:name=".dev.order.ui.OrderActivity" />
-        <activity android:name=".dev.aboutUs.AboutUsActivity"></activity>
+        <activity android:name=".dev.aboutUs.AboutUsActivity" />
+        <activity android:name=".dev.shops.ui.ShopHomeActivity" />
+        <activity android:name=".dev.shops.ui.OpenShopActivity" />
+        <activity android:name=".dev.address.ui.AddNewAddressActivity"></activity>
     </application>
 
 </manifest>

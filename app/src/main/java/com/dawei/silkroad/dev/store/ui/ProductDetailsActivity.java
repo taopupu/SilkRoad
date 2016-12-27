@@ -10,6 +10,7 @@ import com.bigkoo.convenientbanner.holder.CBViewHolderCreator;
 import com.bigkoo.convenientbanner.listener.OnItemClickListener;
 import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
+import com.dawei.silkroad.dev.shops.ui.ShopHomeActivity;
 import com.dawei.silkroad.view.LocalImageHolderView;
 import com.dawei.silkroad.view.SharePopWindow;
 
@@ -31,6 +32,7 @@ public class ProductDetailsActivity extends BaseActivity implements View.OnClick
         TextView tv_title = get(R.id.tv_title);
         TextView share = get(R.id.tv_titleRight);
         share.setOnClickListener(this);
+        get(R.id.tv_offical).setOnClickListener(this);
         get(R.id.btn_buy).setOnClickListener(this);
         tv_title.setText(getResources().getText(R.string.detail));
         share.setText(getResources().getText(R.string.share));
@@ -69,6 +71,9 @@ public class ProductDetailsActivity extends BaseActivity implements View.OnClick
                 break;
             case R.id.btn_buy:
                 intentActivity(FirmOrderActivity.class);
+                break;
+            case R.id.tv_offical:
+                intentActivity(ShopHomeActivity.class);
                 break;
         }
     }
