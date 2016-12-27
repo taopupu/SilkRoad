@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 import com.dawei.silkroad.R;
 
-public class LoadProgress extends Dialog{
+public class LoadProgress extends Dialog {
     private static LoadProgress LoadProgress = null;
 
     public LoadProgress(Context context) {
@@ -32,6 +32,7 @@ public class LoadProgress extends Dialog{
     public LoadProgress setTitile(String strTitle) {
         return LoadProgress;
     }
+
     @Override
     public void show() {
         Animation operatingAnim = AnimationUtils.loadAnimation(getContext(), R.anim.loading);
