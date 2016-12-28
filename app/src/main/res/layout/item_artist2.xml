@@ -187,7 +187,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="  职       称:"
+            android:text="@string/job_title"
             android:textColor="@color/colorDarkGray"
             android:textSize="15sp" />
 
@@ -199,7 +199,7 @@
             android:layout_marginRight="12dp"
             android:layout_weight="1"
             android:background="@drawable/text_border"
-            android:hint="请输入职称"
+            android:hint="@string/input_job_title"
             android:textColorHint="@color/colorGray" />
     </LinearLayout>
 
@@ -215,7 +215,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="  流       派:"
+            android:text="@string/schools"
             android:textColor="@color/colorDarkGray"
             android:textSize="15sp" />
 
@@ -227,7 +227,7 @@
             android:layout_marginRight="12dp"
             android:layout_weight="1"
             android:background="@drawable/text_border"
-            android:hint="请输入流派"
+            android:hint="@string/input_schools"
             android:textColorHint="@color/colorGray" />
     </LinearLayout>
 
@@ -243,34 +243,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="  师       承:"
-            android:textColor="@color/colorDarkGray"
-            android:textSize="15sp" />
-
-        <EditText
-            style="@style/input_style"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:layout_weight="1"
-            android:background="@drawable/text_border"
-            android:textColorHint="@color/colorGray" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="38dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text=" 任职机构:"
+            android:text="@string/Apprentice"
             android:textColor="@color/colorDarkGray"
             android:textSize="15sp" />
 
@@ -297,7 +270,34 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="  头       衔:"
+            android:text="@string/post_office"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="15sp" />
+
+        <EditText
+            style="@style/input_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_border"
+            android:textColorHint="@color/colorGray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/titles"
             android:textColor="@color/colorDarkGray"
             android:textSize="15sp" />
 

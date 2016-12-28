@@ -16,4 +16,10 @@ public interface IHttp {
     void forgetPwd(String phoneNumber, String password, String smsCode, Callback callback);
 
     void receiveAddress(String uid, Callback callback);
+
+    void province_List(Callback callback);
+
+    void cityList(String id, Callback callback);
+
+    void countryList(String id, Callback callback);
 }

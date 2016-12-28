@@ -45,7 +45,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*姓       名:"
+                        android:text="@string/name"
                         android:textColor="@color/colorDarkGray"
                         android:textSize="15sp" />
 
@@ -74,7 +74,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text=" 艺        名:"
+                        android:text="@string/stage_name"
                         android:textColor="@color/colorDarkGray"
                         android:textSize="15sp" />
 
@@ -102,7 +102,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*性        别:"
+                        android:text="@string/sex"
                         android:textColor="@color/colorDarkGray"
                         android:textSize="15sp" />
 
@@ -175,7 +175,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*籍        贯:"
+                        android:text="@string/native_place"
                         android:textColor="@color/colorDarkGray"
                         android:textSize="15sp" />
 
@@ -208,7 +208,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*现  居  地:"
+                        android:text="@string/place_of_residence"
                         android:textColor="@color/colorDarkGray"
                         android:textSize="15sp" />
 
@@ -237,7 +237,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*详细地址:"
+                        android:text="@string/Details_address"
                         android:textColor="@color/colorDarkGray"
                         android:textSize="15sp" />
 
@@ -265,7 +265,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*类        型:"
+                        android:text="@string/types"
                         android:textColor="@color/colorDarkGray"
                         android:textSize="15sp" />
 
@@ -314,7 +314,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:text="*手        机:"
+                        android:text="@string/cellphone"
                         android:textColor="@color/colorDarkGray"
                         android:textSize="15sp" />
 
@@ -375,7 +375,7 @@
                     android:layout_marginRight="70dp"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/login_btn"
-                    android:text="下一步"
+                    android:text="@string/next"
                     android:textColor="@color/colorWhite"
                     android:textSize="16sp" />
             </LinearLayout>

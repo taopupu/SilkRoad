@@ -10,7 +10,7 @@
 
     <include layout="@layout/common_title"></include>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginTop="5dp"
@@ -18,13 +18,22 @@
 
         <TextView
             style="@style/textView"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
+            android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="是否开启和关闭消息" />
+            android:text="@string/receive_messages" />
 
-    </RelativeLayout>
+        <ToggleButton
+            android:layout_width="38dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/on_off"
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"

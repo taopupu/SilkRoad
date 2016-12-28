@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -26,6 +27,7 @@ public class AddressActivity extends BaseActivity implements View.OnClickListene
     ListView list_address;
     List<ReceiveAddressList> lists = new ArrayList<>();
     ReceiveAddressAdapter addressAdapter;
+    LinearLayout list_empty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,8 @@ public class AddressActivity extends BaseActivity implements View.OnClickListene
     }
 
     private void initView() {
+        progress.show();
+        list_empty = get(R.id.list_empty);
         TextView tv_title = get(R.id.tv_title);
         tv_title.setText(getResources().getText(R.string.address));
         rl_add = get(R.id.rl_add);
@@ -65,9 +69,13 @@ public class AddressActivity extends BaseActivity implements View.OnClickListene
 
             @Override
             public void onResponse(String response, int id) {
-                List<ReceiveAddressList> lists = ParseUtils.fromJsonArray(response, ReceiveAddressList[].class);
+               List<ReceiveAddressList> lists = ParseUtils.fromJsonArray(response, ReceiveAddressList[].class);
+                progress.dismiss();
                 if (lists != null && lists.size() != 0) {
                     addressAdapter.addList(lists);
+                }else {
+                    list_empty.setVisibility(View.VISIBLE);
+                    list_address.setVisibility(View.GONE);
                 }
             }
         });

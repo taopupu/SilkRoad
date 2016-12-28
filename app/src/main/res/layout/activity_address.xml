@@ -10,6 +10,27 @@
 
     <include layout="@layout/common_title"></include>
 
+    <LinearLayout
+        android:id="@+id/list_empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:src="@mipmap/dashouhuodizhi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还没有收货地址呢！" />
+    </LinearLayout>
+
     <ListView
         android:id="@+id/list_address"
         android:layout_width="match_parent"
@@ -21,13 +42,16 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
+        android:background="@color/colorMain"
         android:orientation="vertical">
 
         <TextView
+            style="@style/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/add_address" />
+            android:text="@string/add_address"
+            android:textColor="@color/white" />
 
         <include layout="@layout/layout_line"></include>
 

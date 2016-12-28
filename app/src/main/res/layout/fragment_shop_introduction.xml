@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:text="店铺名称：" />
+        android:text="@string/storeName" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             style="@style/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="店铺logo：" />
+            android:text="@string/storelogo" />
 
         <ImageView
             android:layout_width="50dp"
@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:text="成立时间：" />
+        android:text="@string/date_of_establishment" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,7 +46,7 @@
             style="@style/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="简介：" />
+            android:text="@string/brief_introduction" />
 
         <TextView
             style="@style/textView"
@@ -61,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:text="签约艺术家：" />
+        android:text="@string/contract_artist" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_art"

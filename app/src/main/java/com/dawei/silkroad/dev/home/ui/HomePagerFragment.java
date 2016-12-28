@@ -60,8 +60,11 @@ public class HomePagerFragment extends Fragment implements View.OnClickListener 
     }
 
     private void initView() {
+        List<String> mv_list = new ArrayList<>();
+        mv_list.add(getResources().getString(R.string.carousel_advertising1));
+        mv_list.add(getResources().getString(R.string.carousel_advertising2));
         TextView tv_title = (TextView) view.findViewById(R.id.tv_title);
-        tv_title.setText("丝路汇");
+        tv_title.setText(getResources().getText(R.string.app_name));
         view.findViewById(R.id.title_back).setVisibility(View.GONE);
         rv_content = (XRecyclerView) getActivity().findViewById(R.id.rv_content);
         rv_content.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -79,7 +82,7 @@ public class HomePagerFragment extends Fragment implements View.OnClickListener 
         view1.findViewById(R.id.news).setOnClickListener(this);
         view1.findViewById(R.id.auction).setOnClickListener(this);
         rv_content.addHeaderView(view1);
-        rv_content.setAdapter(new HomeAdapter(content, getActivity()));
+        rv_content.setAdapter(new HomeAdapter(mv_list, content, getActivity()));
         convenientBanner = (ConvenientBanner) view1.findViewById(R.id.convenientBanner);
         carousel();
 

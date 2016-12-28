@@ -48,5 +48,20 @@ public class HttpImple extends HttpApi implements IHttp {
         OkHttpUtils.get().url(HttpApi.ReceiveAddress).addParams("userId", uid).build().execute(callback);
     }
 
+    @Override
+    public void province_List(Callback callback) {
+        OkHttpUtils.get().url(HttpApi.ProvinceList).build().execute(callback);
+    }
+
+    @Override
+    public void cityList(String id, Callback callback) {
+        OkHttpUtils.get().url(HttpApi.CITYLIST).addParams("provinceId", id).build().execute(callback);
+    }
+
+    @Override
+    public void countryList(String id, Callback callback) {
+        OkHttpUtils.get().url(HttpApi.COUNTRYLIST).addParams("cityId", id).build().execute(callback);
+    }
+
 
 }

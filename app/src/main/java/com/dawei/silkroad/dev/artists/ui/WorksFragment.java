@@ -3,6 +3,7 @@ package com.dawei.silkroad.dev.artists.ui;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -46,7 +47,7 @@ public class WorksFragment extends Fragment {
 
     private void initView() {
         rv_works = (RecyclerView) view.findViewById(R.id.rv_works);
-        rv_works.setLayoutManager(new LinearLayoutManager(getActivity()));
+        rv_works.setLayoutManager(new GridLayoutManager(getContext(), 3));
         rv_works.setAdapter(new WorksAdapter());
     }
 

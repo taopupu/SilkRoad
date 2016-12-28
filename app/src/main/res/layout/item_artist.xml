@@ -4,50 +4,50 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginBottom="5dp"
-        android:gravity="center_vertical">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:gravity="center_vertical">-->
 
-        <ImageView
-            android:layout_width="3dp"
-            android:layout_height="20dp"
-            android:background="@color/colorMain" />
+        <!--<ImageView-->
+            <!--android:layout_width="3dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="@color/colorMain" />-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="@string/artists"
-            android:textColor="@color/colorDarkGray"
-            android:textSize="20sp" />
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="@string/artists"-->
+            <!--android:textColor="@color/colorDarkGray"-->
+            <!--android:textSize="20sp" />-->
 
-        <LinearLayout
-            android:id="@+id/view_more"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="right">
+        <!--<LinearLayout-->
+            <!--android:id="@+id/view_more"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="right">-->
 
-            <ImageView
-                android:layout_width="2dp"
-                android:layout_height="20dp"
-                android:background="@color/colorGray" />
+            <!--<ImageView-->
+                <!--android:layout_width="2dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:background="@color/colorGray" />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginLeft="10dp"
-                android:text="@string/more"
-                android:textColor="@color/colorDarkGray"
-                android:textSize="15sp" />
-        </LinearLayout>
-    </LinearLayout>
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:text="@string/more"-->
+                <!--android:textColor="@color/colorDarkGray"-->
+                <!--android:textSize="15sp" />-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_artist"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/rv_artist"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>-->
 </LinearLayout>

@@ -9,6 +9,7 @@ import com.dawei.silkroad.R;
 import com.dawei.silkroad.base.BaseActivity;
 
 public class AddNewAddressActivity extends BaseActivity implements View.OnClickListener {
+    TextView address;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class AddNewAddressActivity extends BaseActivity implements View.OnClickL
     }
 
     private void initView() {
+        address = get(R.id.add_newaddress_location);
         TextView tv_title = get(R.id.tv_title);
         tv_title.setText(getResources().getText(R.string.add_new_address));
         onBack(get(R.id.title_back));
@@ -44,6 +46,8 @@ public class AddNewAddressActivity extends BaseActivity implements View.OnClickL
         super.onActivityResult(requestCode, resultCode, data);
         switch (resultCode) {
             case 2:
+                address.setText(data.getStringExtra("name"));
+
         }
     }
 }

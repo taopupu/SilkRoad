@@ -24,12 +24,10 @@ public class HomeAdapter extends RecyclerView.Adapter {
     Context context;
     List<String> mv_list;
 
-    public HomeAdapter(List<Integer> list, Context context) {
+    public HomeAdapter(List<String> mv_list, List<Integer> list, Context context) {
         this.list = list;
         this.context = context;
-        mv_list = new ArrayList<>();
-        mv_list.add("丝路汇平台是西安国家级对外文化贸易基地");
-        mv_list.add("全国文化产品跨境电商综合试点项目");
+        this.mv_list = mv_list;
 
     }
 
@@ -55,15 +53,15 @@ public class HomeAdapter extends RecyclerView.Adapter {
             });
             shopHolder.marqueeView.startWithList(mv_list);
         } else if (list.get(position) == 2) {
-            ArtistHolder artistHolder = (ArtistHolder) holder;
-            artistHolder.rv_artist.setLayoutManager(new GridLayoutManager(context, 3));
-            artistHolder.rv_artist.setAdapter(new ArtistAdapter(context));
-            artistHolder.lin_more.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    context.startActivity(new Intent(context, ArtistActivity.class));
-                }
-            });
+//            ArtistHolder artistHolder = (ArtistHolder) holder;
+//            artistHolder.rv_artist.setLayoutManager(new GridLayoutManager(context, 3));
+//            artistHolder.rv_artist.setAdapter(new ArtistAdapter(context));
+//            artistHolder.lin_more.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    context.startActivity(new Intent(context, ArtistActivity.class));
+//                }
+//            });
         }
     }
 
@@ -94,8 +92,8 @@ public class HomeAdapter extends RecyclerView.Adapter {
 
         public ArtistHolder(View itemView) {
             super(itemView);
-            rv_artist = (RecyclerView) itemView.findViewById(R.id.rv_artist);
-            lin_more = (LinearLayout) itemView.findViewById(R.id.view_more);
+//            rv_artist = (RecyclerView) itemView.findViewById(R.id.rv_artist);
+//            lin_more = (LinearLayout) itemView.findViewById(R.id.view_more);
         }
     }
 }

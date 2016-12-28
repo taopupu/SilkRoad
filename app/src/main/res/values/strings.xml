@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SilkRoad</string>
+    <string name="app_name">丝路汇</string>
     <string name="logic_title">登录</string>
     <string name="logic_phone">请输入手机号</string>
     <string name="logic_pwd">请输入密码</string>
@@ -14,6 +14,9 @@
     <string name="input_old_pwd">请输入旧密码</string>
     <string name="reconfirm">再次确认密码</string>
     <string name="phone">手机号</string>
+    <string name="cellphone">*手机：</string>
+    <string name="another_name">别名</string>
+    <string name="add_friends">加好友</string>
     <string name="input_code">请输入验证码</string>
     <string name="input_pwd">请输入密码 </string>
     <string name="more_input_pwd">再次输入密码 </string>
@@ -32,6 +35,10 @@
     <string name="cancel">取消</string>
     <string name="confirm">确定</string>
     <string name="works">作品</string>
+    <string name="name">*姓名：</string>
+    <string name="stage_name">艺名：</string>
+    <string name="sex">*性别：</string>
+    <string name="native_place">*籍贯：</string>
     <string name="information">基本信息</string>
     <string name="personal_point">个人观点</string>
     <string name="share">分享</string>
@@ -62,7 +69,14 @@
     <string name="check_for_updates">检查更新</string>
     <string name="about_us">关于我们</string>
     <string name="sign_out">注销登陆</string>
-    <string name="store_name">*店铺名称:</string>
+    <string name="job_title">职称：</string>
+    <string name="input_job_title">请输入职称</string>
+    <string name="schools">流派：</string>
+    <string name="input_schools">请输入流派</string>
+    <string name="Apprentice">师承：</string>
+    <string name="titles">头衔：</string>
+
+    <string name="storeName">*店铺名称:</string>
     <string name="main_business">*主营业务:</string>
     <string name="traditional_Chinese_painting">国画</string>
     <string name="oil_painting">油画</string>
@@ -80,6 +94,7 @@
     <string name="artist_type">艺术家类型:</string>
     <string name="be_good_at">擅长:</string>
     <string name="be_good_at_type">*擅长类型:</string>
+    <string name="types">*类型:</string>
     <string name="academic_title">职称:</string>
     <string name="sect">流派:</string>
     <string name="teachings">师承:</string>
@@ -114,7 +129,9 @@
     <string name="learned_scholar">博士</string>
     <string name="other">其他</string>
     <string name="individual_resume">*个人简介:</string>
+    <string name="brief_introduction">简介：</string>
     <string name="common_head">*常用头像:</string>
+    <string name="contract_artist">签约艺术家:</string>
     <string name="not_uploaded">未上传</string>
     <string name="positive_identity_card">*身份证正面:</string>
     <string name="the_opposite_of_ID_card">*身份证反面:</string>
@@ -198,6 +215,22 @@
     <string name="choice">请选择</string>
     <string name="add_new_address">添加新地址</string>
     <string name="goods_list">作品列表</string>
+    <string name="carousel_advertising1">丝路汇平台是西安国家级对外文化贸易基地</string>
+    <string name="carousel_advertising2">全国文化产品跨境电商综合试点项目</string>
+    <string name="notice_to_be_settled_down">1.入驻须知：</string>
+    <string name="Article1.1">1.1  丝路汇开放平台有权根据包括但不限于品牌需求、公司经营状况、服务水平等其他因素退回卖家申请。</string>
+    <string name="Article1.2">1.2  丝路汇开放平台有权在申请入驻及后续经营阶段要求卖家提供其他资源。</string>
+    <string name="Article1.3">1.3  丝路汇开放平台将结合各行业发展动态、国家相关规定及消费者购买需求，不定期更新招商标准。</string>
+    <string name="Seller_notice">2.卖家必须如实提供资料和信息：</string>
+    <string name="Article2.1">2.1  请务必确保申请入驻及后续经营阶段提供的相关资料和信息的真实性
+        、完整性、有效性（若卖家提供的相关资质为第三方提供，请务必先核实文件的真实有效完整性），一
+        旦发现虚假资质或信息的，丝路汇开放平台将不再与卖家进行合作，并有权根据丝路汇开放平台规则及
+        与卖家签署的相关协议之约进行处理。</string>
+    <string name="Immediately_open">立即开通</string>
+    <string name="receive_messages">接收消息</string>
+    <string name="my_messages">我的消息</string>
+    <string name="network_request_failed">网络请求失败</string>
+    <string name="storelogo">店铺logo:</string>
     <string-array name="sp_native_place">
         <item>北京</item>
         <item>陕西</item>
@@ -212,8 +245,6 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="my_messages">我的消息</string>
-    <string name="network_request_failed">网络请求失败</string>
 
 
 </resources>
