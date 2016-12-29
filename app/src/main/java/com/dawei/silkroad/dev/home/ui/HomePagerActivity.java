@@ -14,7 +14,7 @@ import com.dawei.silkroad.base.BaseActivity;
 import com.dawei.silkroad.dev.user.ui.MineFragment;
 
 /**
- * 主页面(首页、我的等)
+ * 主页面(首页、我的等)、
  */
 public class HomePagerActivity extends BaseActivity{
     private FragmentManager manager;
